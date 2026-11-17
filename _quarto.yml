@@ -1,0 +1,21 @@
+project:
+  type: website
+  output-dir: docs        # pasta que o GitHub Pages publica
+
+website:
+  title: "Manual da receção"
+  page-navigation: false
+
+format:
+  html:
+    lang: pt-PT
+    theme: cosmo
+    css: estilo.css
+    toc: true
+    toc-title: "Neste manual"
+    toc-depth: 2
+    toc-location: left
+    number-sections: false
+    smooth-scroll: true
+    fig-align: center
+    lightbox: true        # clicar num print abre-o em grande

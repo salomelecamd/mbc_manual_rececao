@@ -1,0 +1,67 @@
+/* Estilo do manual da receção — cores tiradas do logo da Mariluz Bioclinic */
+:root {
+  --mbc-taupe: #8f8677;       /* MARILUZ e símbolo */
+  --mbc-taupe-escuro: #6b6357;/* para texto: mais contraste */
+  --mbc-salvia: #8ca19a;      /* "bio clinic" */
+  --mbc-salvia-escuro: #4f6e65;
+  --mbc-fundo: #f6f4f1;
+}
+body { font-size: 1.05rem; color: #3a3631; background: #fff;
+       font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
+h1, h2, h3, h4 { font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+                 color: var(--mbc-taupe-escuro); font-weight: 600; }
+h2 { margin-top: 2.5rem; padding-bottom: .3rem; border-bottom: 2px solid var(--mbc-salvia); }
+a, a:visited { color: var(--mbc-salvia-escuro); }
+#TOC .nav-link.active, #TOC a.active { color: var(--mbc-salvia-escuro) !important;
+                                       border-left-color: var(--mbc-salvia) !important; }
+img { border: 1px solid #d9d4cc; border-radius: 4px; }
+
+/* Cabeçalho com logo */
+.cabecalho { text-align: left; padding: .5rem 0 1.5rem; margin-bottom: 1.5rem;
+             border-bottom: 1px solid #e4dfd8; }
+.cabecalho img.logo, .cabecalho .logo img { border: 0; width: 320px; max-width: 80%; height: auto; }
+.cabecalho p { margin: 0; }
+.cabecalho .titulo { display: block; font-size: 2rem; font-weight: 600; letter-spacing: .02em;
+                     color: var(--mbc-taupe-escuro); margin-top: .8rem; }
+.cabecalho .sub { display: block; color: var(--mbc-salvia-escuro); font-size: 1rem; }
+
+/* Tabelas: cabeçalho em tom do logo */
+thead th { background: var(--mbc-fundo); color: var(--mbc-taupe-escuro); }
+figure figcaption { font-size: .9rem; color: #555; }
+
+/* Caixas de destaque */
+.callout { font-size: 1rem; }
+
+/* Tabelas */
+table { font-size: .95rem; }
+td, th { vertical-align: top; }
+
+/* Amostras de cor na legenda da agenda */
+.cor { display: inline-block; width: 1.1em; height: 1.1em; border: 1px solid #999;
+       border-radius: 2px; vertical-align: -0.15em; margin-right: .35em; }
+.branco  { background: #ffffff; }
+.verde   { background: #e5fbe5; }
+.cinzento{ background: #c4c4c4; }
+.laranja { background: #f2a66b; }
+
+@media print {
+  #quarto-margin-sidebar, #TOC, nav { display: none !important; }
+  h2 { page-break-before: always; }
+  img { max-width: 100% !important; page-break-inside: avoid; }
+}
+
+/* Telemóvel: as tabelas deslizam dentro da página em vez de a alargar */
+@media (max-width: 700px) {
+  table { display: block; overflow-x: auto; }
+  body { font-size: 1rem; }
+}
+
+/* A data já aparece no cabeçalho com o logo */
+#title-block-header { display: none; }
+
+/* Caixas de destaque nas cores do logo */
+.callout.callout-style-default.callout-note { border-left-color: var(--mbc-taupe) !important; }
+.callout-note .callout-header { background-color: var(--mbc-fundo) !important; }
+.callout-note .callout-icon::before { filter: grayscale(1); }
+.callout.callout-style-default.callout-tip { border-left-color: var(--mbc-salvia) !important; }
+.callout-tip .callout-header { background-color: #eef3f1 !important; }
