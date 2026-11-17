@@ -254,11 +254,20 @@ notas na agenda do Novigest nem a mensagem global.
 
 **Para criar um aviso:**
 
-1. Abrir o Google Calendar e clicar no dia (e na hora, se tiver).
-2. Escrever um título curto e claro, por exemplo "Técnico do ar condicionado" ou "Pagar laboratório".
-3. Em **calendário**, escolher **Avisos MBC**. Se não tiver hora, marcar **Todo o dia**.
-4. Se for preciso, acrescentar uma nota na descrição, por exemplo um contacto ou um valor.
-5. Clicar em **Guardar**.
+1. Abrir o Google Calendar e clicar no dia e na hora do aviso.
+2. Escrever um **título** curto e claro, por exemplo "Técnico do ar condicionado" ou "Pagar laboratório".
+3. Confirmar o **dia e a hora** e clicar em **Mais opções**.
+
+![](imagens/17_aviso_criar.png){fig-alt="Criação rápida do evento: título, dia e hora, Mais opções"}
+
+4. No calendário, escolher **Avisos MBC**.
+
+![](imagens/18_aviso_calendario.png){fig-alt="Escolha do calendário Avisos MBC"}
+
+5. Se o aviso não tiver hora, marcar **Todo o dia**. Se for preciso, acrescentar uma nota na descrição, por exemplo um contacto ou um valor.
+6. Clicar em **Guardar**.
+
+![](imagens/19_aviso_guardar.png){fig-alt="Evento de dia inteiro no calendário Avisos MBC e botão Guardar"}
 
 ::: {.destaque}
 **Avisos para quinta ou segunda:** o aviso de "1 dia antes" chega à quarta ou ao domingo, com a clínica
