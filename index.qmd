@@ -18,7 +18,7 @@ gerida é a base do cuidado que queremos prestar: o doente certo, à hora certa,
 ## Para que serve este manual
 É um guia rápido de consulta para a equipa de receção: o que se vê na agenda do Novigest e o
 que fazer em cada caso. Horários, férias, ausências e dias de encerramento são registados pela
-**gestão (Salomé)**. A equipa só tem de pedir por escrito e depois vê o resultado na agenda.
+gestão (Salomé). A equipa só tem de pedir por escrito e depois vê o resultado na agenda.
 :::
 
 ## Horários dos médicos
