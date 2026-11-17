@@ -152,7 +152,7 @@ ul.task-list li input[type="checkbox"] {
 <ol class="regras">
   <li><span class="num">1</span><div><b>A agenda mostra sozinha quando se marca.</b><span>Já não se escreve "NÃO MARCAR" nem "ENCERRADA" na agenda.</span></div></li>
   <li><span class="num">2</span><div><b>Branco marca-se. Cinzento não.</b><span>O cinzento é fora do horário. Só se marca com autorização do médico ou da gestão.</span></div></li>
-  <li><span class="num">3</span><div><b>Verde: em caso de necessidade.</b><span>Nas férias do Dr. Ricardo, de preferência depois de preenchidas as horas a branco da Dra. Mariluz.</span></div></li>
+  <li><span class="num">3</span><div><b>Verde: depende do motivo.</b><span>Nas férias do Dr. Ricardo, em caso de necessidade, de preferência depois de preenchidas as horas a branco da Dra. Mariluz. Num dia de abertura alterado (ex.: quarta em vez de terça), marca-se normalmente.</span></div></li>
   <li><span class="num">4</span><div><b>Mudanças de horário pedem-se à gestão.</b><span>Férias, ausências e dias diferentes. Até aparecerem na agenda, não se marca nesses dias ou horas.</span></div></li>
   <li><span class="num">5</span><div><b>Na coluna EQUIPA ASSISTENCIAL nunca se marca.</b><span>Só aparece quando alguém da equipa está ausente.</span></div></li>
 </ol>
@@ -191,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="como-ler-a-agenda">Como ler a agenda</h2>
 <div class="legenda">
   <div class="item"><span class="cor branco"></span><div><b>Branco ("GR")</b><span>Horário habitual do médico. Marca-se.</span></div></div>
-  <div class="item"><span class="cor verde"></span><div><b>Verde claro</b><span>Horas extra só nesse dia. Em caso de necessidade.</span></div></div>
+  <div class="item"><span class="cor verde"></span><div><b>Verde claro</b><span>Horas extra só nesse dia. Como se marca depende do motivo (ver abaixo).</span></div></div>
   <div class="item"><span class="cor cinzento"></span><div><b>Cinzento</b><span>Fora do horário. Não se marca, salvo autorização.</span></div></div>
   <div class="item"><span class="cor laranja"></span><div><b>"Férias" a laranja</b><span>Médico ausente. Não se marca.</span></div></div>
   <div class="item"><span class="cor letra">F</span><div><b>F no calendário</b><span>Clínica fechada.</span></div></div>
@@ -202,11 +202,12 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="imagens/01_terca_sem_ricardo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="imagens/01_terca_sem_ricardo.png" class="img-fluid" alt="Agenda de uma terça-feira: o Dr. Ricardo não aparece e o almoço da Dra. Mariluz está a cinzento"></a></p>
 <p><strong>Exemplo 2.</strong> Numa sexta-feira, a Dra. Mariluz só tem branco das 9h30 às 12h30 e das 14h às 17h30.</p>
 <p><a href="imagens/02_sexta_cinzentos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="imagens/02_sexta_cinzentos.png" class="img-fluid" alt="Agenda de uma sexta-feira: períodos a cinzento da Dra. Mariluz"></a></p>
-<section id="horas-a-verde-férias-do-dr.-ricardo" class="level3">
-<h3 class="anchored" data-anchor-id="horas-a-verde-férias-do-dr.-ricardo">Horas a verde: férias do Dr.&nbsp;Ricardo</h3>
-<p>Quando o Dr.&nbsp;Ricardo está de férias, a Dra. Mariluz assume as horas dele que ficam disponíveis. Essas horas aparecem a verde na coluna dela.</p>
-<div class="destaque">
-<p><strong>De preferência, o horário habitual.</strong> Nas semanas de férias do Dr.&nbsp;Ricardo, as horas a verde usam-se em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) da Dra. Mariluz. Isto aplica-se apenas às férias do Dr.&nbsp;Ricardo.</p>
+<section id="horas-a-verde-depende-do-motivo" class="level3">
+<h3 class="anchored" data-anchor-id="horas-a-verde-depende-do-motivo">Horas a verde: depende do motivo</h3>
+<p>As horas a verde são horas que não fazem parte do horário habitual do médico. Aparecem por dois motivos, e marca-se de forma diferente em cada um:</p>
+<div class="legenda">
+  <div class="item"><span class="cor verde"></span><div><b>Férias do Dr. Ricardo</b><span>A Dra. Mariluz assume as horas dele que ficam disponíveis. Marcar em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) dela.</span></div></div>
+  <div class="item"><span class="cor verde"></span><div><b>Dia de abertura alterado</b><span>A clínica abre num dia em que normalmente fecha, em troca de outro (ex.: abre à quarta e fecha à terça). Marcar normalmente, como num dia habitual a branco.</span></div></div>
 </div>
 <p><strong>Exemplo 3.</strong> A Dra. Mariluz faz o horário do Dr.&nbsp;Ricardo, que está de férias. As horas extra aparecem a verde.</p>
 <p><a href="imagens/15_pontual_verde.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="imagens/15_pontual_verde.png" class="img-fluid" alt="Horas pontuais a verde e horário habitual a branco na coluna da Dra. Mariluz"></a></p>
@@ -390,34 +391,38 @@ ul.task-list li input[type="checkbox"] {
 <td>Marcar em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) da Dra. Mariluz</td>
 </tr>
 <tr class="even">
+<td>Hora a verde (dia de abertura da clínica alterado)</td>
+<td>Marcar normalmente, como num dia habitual a branco</td>
+</tr>
+<tr class="odd">
 <td>Consulta autorizada fora de horas</td>
 <td>Hora cinzenta → marcar → “fora do horário habitual”</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Doente não respondeu à SMS de confirmação</td>
 <td>Ligar até às 16h; se não atender, SMS de aviso</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Férias ou ausência de um médico ou de uma assistente</td>
 <td>Pedir à gestão por escrito</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Mudança de horário de um médico</td>
 <td>Pedir à gestão por escrito</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Clínica fecha ou abre fora do habitual</td>
 <td>Pedir à gestão por escrito</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Ligar a um doente para marcar</td>
 <td>listas → Lista de Espera</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Doente desmarcou ou é preciso remarcar</td>
 <td>listas → Remarcações</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Aviso interno com data</td>
 <td>A definir</td>
 </tr>

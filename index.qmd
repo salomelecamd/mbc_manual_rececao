@@ -27,7 +27,7 @@ A equipa pede por escrito e depois vê o resultado na agenda.
 <ol class="regras">
   <li><span class="num">1</span><div><b>A agenda mostra sozinha quando se marca.</b><span>Já não se escreve "NÃO MARCAR" nem "ENCERRADA" na agenda.</span></div></li>
   <li><span class="num">2</span><div><b>Branco marca-se. Cinzento não.</b><span>O cinzento é fora do horário. Só se marca com autorização do médico ou da gestão.</span></div></li>
-  <li><span class="num">3</span><div><b>Verde: em caso de necessidade.</b><span>Nas férias do Dr. Ricardo, de preferência depois de preenchidas as horas a branco da Dra. Mariluz.</span></div></li>
+  <li><span class="num">3</span><div><b>Verde: depende do motivo.</b><span>Nas férias do Dr. Ricardo, em caso de necessidade, de preferência depois de preenchidas as horas a branco da Dra. Mariluz. Num dia de abertura alterado (ex.: quarta em vez de terça), marca-se normalmente.</span></div></li>
   <li><span class="num">4</span><div><b>Mudanças de horário pedem-se à gestão.</b><span>Férias, ausências e dias diferentes. Até aparecerem na agenda, não se marca nesses dias ou horas.</span></div></li>
   <li><span class="num">5</span><div><b>Na coluna EQUIPA ASSISTENCIAL nunca se marca.</b><span>Só aparece quando alguém da equipa está ausente.</span></div></li>
 </ol>
@@ -79,7 +79,7 @@ gestão ou quando já têm marcações. O Dr. Renato Conti já não trabalha na 
 ```{=html}
 <div class="legenda">
   <div class="item"><span class="cor branco"></span><div><b>Branco ("GR")</b><span>Horário habitual do médico. Marca-se.</span></div></div>
-  <div class="item"><span class="cor verde"></span><div><b>Verde claro</b><span>Horas extra só nesse dia. Em caso de necessidade.</span></div></div>
+  <div class="item"><span class="cor verde"></span><div><b>Verde claro</b><span>Horas extra só nesse dia. Como se marca depende do motivo (ver abaixo).</span></div></div>
   <div class="item"><span class="cor cinzento"></span><div><b>Cinzento</b><span>Fora do horário. Não se marca, salvo autorização.</span></div></div>
   <div class="item"><span class="cor laranja"></span><div><b>"Férias" a laranja</b><span>Médico ausente. Não se marca.</span></div></div>
   <div class="item"><span class="cor letra">F</span><div><b>F no calendário</b><span>Clínica fechada.</span></div></div>
@@ -98,16 +98,18 @@ marcação antiga.
 
 ![](imagens/02_sexta_cinzentos.png){fig-alt="Agenda de uma sexta-feira: períodos a cinzento da Dra. Mariluz"}
 
-### Horas a verde: férias do Dr. Ricardo
+### Horas a verde: depende do motivo
 
-Quando o Dr. Ricardo está de férias, a Dra. Mariluz assume as horas dele que ficam disponíveis. Essas
-horas aparecem a verde na coluna dela.
+As horas a verde são horas que não fazem parte do horário habitual do médico. Aparecem por dois motivos,
+e marca-se de forma diferente em cada um:
 
-::: {.destaque}
-**De preferência, o horário habitual.** Nas semanas de férias do Dr. Ricardo, as horas a verde usam-se
-em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) da
-Dra. Mariluz. Isto aplica-se apenas às férias do Dr. Ricardo.
-:::
+```{=html}
+<div class="legenda">
+  <div class="item"><span class="cor verde"></span><div><b>Férias do Dr. Ricardo</b><span>A Dra. Mariluz assume as horas dele que ficam disponíveis. Marcar em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) dela.</span></div></div>
+  <div class="item"><span class="cor verde"></span><div><b>Dia de abertura alterado</b><span>A clínica abre num dia em que normalmente fecha, em troca de outro (ex.: abre à quarta e fecha à terça). Marcar normalmente, como num dia habitual a branco.</span></div></div>
+</div>
+```
+
 
 **Exemplo 3.** A Dra. Mariluz faz o horário do Dr. Ricardo, que está de férias. As horas extra aparecem a verde.
 
@@ -289,6 +291,7 @@ O número por tratar aparece à esquerda, em "Total de remarcações pendentes".
 | Hora a cinzento, sem coluna ou "Férias" | Não marcar: o médico não está |
 | Hora a branco | Marcar normalmente |
 | Hora a verde (férias do Dr. Ricardo) | Marcar em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) da Dra. Mariluz |
+| Hora a verde (dia de abertura da clínica alterado) | Marcar normalmente, como num dia habitual a branco |
 | Consulta autorizada fora de horas | Hora cinzenta → marcar → "fora do horário habitual" |
 | Doente não respondeu à SMS de confirmação | Ligar até às 16h; se não atender, SMS de aviso |
 | Férias ou ausência de um médico ou de uma assistente | Pedir à gestão por escrito |
