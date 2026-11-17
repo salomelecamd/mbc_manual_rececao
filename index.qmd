@@ -276,7 +276,6 @@ pessoa da equipa faz isto uma vez, no computador e no telemóvel:
 4. Em **Notificações de eventos para todo o dia**, pôr: *Notificação 1 dia antes, às 09:00*, *Notificação 0 dias antes, às 09:00* e *Email 1 semana antes, às 09:00*.
 5. **Ligar as notificações** da app Google Calendar no telemóvel e as do browser no computador.
 
-![](imagens/16_notificacoes_calendario.png){fig-alt="Definições do calendário Avisos MBC: notificações de eventos e de eventos de todo o dia"}
 
 ## Lembretes para ligar a doentes: Lista de espera
 
