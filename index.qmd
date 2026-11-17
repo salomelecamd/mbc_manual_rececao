@@ -11,8 +11,7 @@ date-format: "D [de] MMMM [de] YYYY"
 [Agenda Novigest · atualizado a {{< meta date >}}]{.sub}
 :::
 
-A receção é o primeiro contacto de cada doente com a Mariluz Bioclinic. Uma agenda bem
-gerida é a base do cuidado que queremos prestar: o doente certo, à hora certa, com o médico certo.
+Uma agenda bem gerida é um dos pilares base do cuidado que queremos prestar.
 
 ::: {.callout-note}
 ## Para que serve este manual
