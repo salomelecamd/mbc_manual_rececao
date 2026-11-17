@@ -42,10 +42,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-447e42e69aaa9833c0ba1b986f430b20.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2f26042ee04390a409193c36bb3e8631.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-9c55d4cee1440445ea74bc2fd9edefdb.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="dark">
 <script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
 <link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
@@ -93,8 +93,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Neste manual</h2>
    
   <ul class="collapse">
-  <li><a href="#horários-dos-médicos" id="toc-horários-dos-médicos" class="nav-link active" data-scroll-target="#horários-dos-médicos">Horários dos médicos</a></li>
+  <li><a href="#as-regras-da-agenda" id="toc-as-regras-da-agenda" class="nav-link active" data-scroll-target="#as-regras-da-agenda">As regras da agenda</a></li>
+  <li><a href="#todos-os-dias" id="toc-todos-os-dias" class="nav-link" data-scroll-target="#todos-os-dias">Todos os dias</a></li>
+  <li><a href="#horários-dos-médicos" id="toc-horários-dos-médicos" class="nav-link" data-scroll-target="#horários-dos-médicos">Horários dos médicos</a></li>
   <li><a href="#como-ler-a-agenda" id="toc-como-ler-a-agenda" class="nav-link" data-scroll-target="#como-ler-a-agenda">Como ler a agenda</a></li>
+  <li><a href="#confirmação-de-consultas" id="toc-confirmação-de-consultas" class="nav-link" data-scroll-target="#confirmação-de-consultas">Confirmação de consultas</a></li>
   <li><a href="#marcar-fora-do-horário" id="toc-marcar-fora-do-horário" class="nav-link" data-scroll-target="#marcar-fora-do-horário">Marcar fora do horário</a></li>
   <li><a href="#pedidos-à-gestão" id="toc-pedidos-à-gestão" class="nav-link" data-scroll-target="#pedidos-à-gestão">Pedidos à gestão</a></li>
   <li><a href="#lembretes-para-ligar-a-doentes-lista-de-espera" id="toc-lembretes-para-ligar-a-doentes-lista-de-espera" class="nav-link" data-scroll-target="#lembretes-para-ligar-a-doentes-lista-de-espera">Lembretes para ligar a doentes: Lista de espera</a></li>
@@ -134,166 +137,167 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="cabecalho">
-<p><a href="imagens/logo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="imagens/logo.png" class="logo img-fluid" alt="Mariluz Bioclinic"></a></p>
-<p><span class="titulo">Manual da receção</span> <span class="sub">Agenda Novigest · atualizado a 17 de novembro de 2026</span></p>
+<header class="topo">
+  <img src="imagens/logo_transparente.png" alt="Mariluz Bioclinic" class="logo">
+  <h1 class="titulo">Manual da receção</h1>
+  <p class="lead">Uma agenda bem gerida é um dos pilares base do cuidado que queremos prestar.</p>
+  <p class="meta">Agenda Novigest · atualizado a <span class="data"></span></p>
+</header>
+<p><span id="data-atualizacao" class="escondido">17 de novembro de 2026</span></p>
+<div class="nota">
+<p><strong>Para que serve.</strong> Guia rápido para a receção: o que se vê na agenda do Novigest e o que fazer em cada caso. Horários, férias, ausências e dias de encerramento são registados pela gestão (Salomé). A equipa pede por escrito e depois vê o resultado na agenda.</p>
 </div>
-<p>Uma agenda bem gerida é um dos pilares base do cuidado que queremos prestar.</p>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<section id="as-regras-da-agenda" class="level2">
+<h2 class="anchored" data-anchor-id="as-regras-da-agenda">As regras da agenda</h2>
+<ol class="regras">
+  <li><span class="num">1</span><div><b>A agenda mostra sozinha quando se marca.</b><span>Já não se escreve "NÃO MARCAR" nem "ENCERRADA" na agenda.</span></div></li>
+  <li><span class="num">2</span><div><b>Branco marca-se. Cinzento não.</b><span>O cinzento é fora do horário. Só se marca com autorização do médico ou da gestão.</span></div></li>
+  <li><span class="num">3</span><div><b>Verde: em caso de necessidade.</b><span>Nas férias do Dr. Ricardo, de preferência depois de preenchidas as horas a branco da Dra. Mariluz.</span></div></li>
+  <li><span class="num">4</span><div><b>Mudanças de horário pedem-se à gestão.</b><span>Férias, ausências e dias diferentes. Até aparecerem na agenda, não se marca nesses dias ou horas.</span></div></li>
+  <li><span class="num">5</span><div><b>Na coluna EQUIPA ASSISTENCIAL nunca se marca.</b><span>Só aparece quando alguém da equipa está ausente.</span></div></li>
+</ol>
+</section>
+<section id="todos-os-dias" class="level2">
+<h2 class="anchored" data-anchor-id="todos-os-dias">Todos os dias</h2>
+<div class="tarefas">
+  <div class="tarefa t-ler"><small>1</small>Abrir <b>listas</b> e tratar a Lista de espera e as Remarcações pendentes.</div>
+  <div class="tarefa t-ligar"><small>2</small>Devolver todas as chamadas.</div>
+  <div class="tarefa t-enviar"><small>3</small>Confirmar as consultas, segundo o <a href="#confirmação-de-consultas">procedimento de confirmação</a>.</div>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Nota</span>Para que serve este manual
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>É um guia rápido de consulta para a equipa de receção: o que se vê na agenda do Novigest e o que fazer em cada caso. Horários, férias, ausências e dias de encerramento são registados pela gestão (Salomé). A equipa só tem de pedir por escrito e depois vê o resultado na agenda.</p>
-</div>
-</div>
+</section>
 <section id="horários-dos-médicos" class="level2">
 <h2 class="anchored" data-anchor-id="horários-dos-médicos">Horários dos médicos</h2>
-<p><strong>Dr.&nbsp;Ricardo Campos:</strong> segunda e sexta, das 9h às 13h e das 14h às 19h, e sábados de 15 em 15 dias, das 9h às 13h.</p>
-<p><strong>Dra. Mariluz Brandão:</strong> segunda à tarde, terça, quinta e sexta (horas na tabela). Se for necessário, está disponível para consultas à segunda de manhã, mas só depois de falar com ela. Não trabalha ao sábado, exceto quando o Dr.&nbsp;Ricardo está de férias num sábado em que a clínica abre.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 12%">
-<col style="width: 15%">
-<col style="width: 14%">
-<col style="width: 6%">
-<col style="width: 14%">
-<col style="width: 16%">
-<col style="width: 20%">
-</colgroup>
-<thead>
-<tr class="header">
-<th></th>
-<th>Seg</th>
-<th>Ter</th>
-<th>Qua</th>
-<th>Qui</th>
-<th>Sex</th>
-<th>Sáb</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>Dra. Mariluz</strong></td>
-<td>14h–19h (manhã só falando com ela)</td>
-<td>9h–12h30 · 14h–19h</td>
-<td>Fechado</td>
-<td>9h–12h30 · 14h–19h</td>
-<td>9h30–12h30 · 14h–17h30</td>
-<td>Só quando o Dr.&nbsp;Ricardo falta</td>
-</tr>
-<tr class="even">
-<td><strong>Dr.&nbsp;Ricardo</strong></td>
-<td>9h–13h · 14h–19h</td>
-<td>—</td>
-<td>Fechado</td>
-<td>—</td>
-<td>9h–13h · 14h–19h</td>
-<td>9h–13h</td>
-</tr>
-</tbody>
-</table>
+<div class="medicos">
+  <div class="cartao">
+    <h3 class="anchored">Dr. Ricardo Campos</h3>
+    <p><b>Segunda e sexta:</b> 9h–13h · 14h–19h</p>
+    <p><b>Sábado</b>, de 15 em 15 dias: 9h–13h</p>
+  </div>
+  <div class="cartao">
+    <h3 class="anchored">Dra. Mariluz Brandão</h3>
+    <p><b>Segunda:</b> 14h–19h <span class="suave">(de manhã só falando com ela)</span></p>
+    <p><b>Terça e quinta:</b> 9h–12h30 · 14h–19h</p>
+    <p><b>Sexta:</b> 9h30–12h30 · 14h–17h30</p>
+    <p><b>Sábado:</b> só quando o Dr. Ricardo está de férias</p>
+  </div>
+</div>
 <p>A clínica fecha à quarta e ao domingo. Abre ao sábado de 15 em 15 dias, das 9h às 13h. Os sábados em que está fechada aparecem com <strong>F</strong> no calendário.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Dois gabinetes ao mesmo tempo
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>O objetivo é ter <strong>os dois gabinetes a funcionar ao mesmo tempo</strong> nas horas em que estão <strong>duas assistentes presentes</strong>. Nessas horas, sempre que possível, preencher as agendas dos dois médicos em simultâneo.</p>
-</div>
+<div class="destaque">
+<p><strong>Dois gabinetes ao mesmo tempo.</strong> O objetivo é ter os dois gabinetes a funcionar ao mesmo tempo nas horas em que estão duas assistentes presentes. Nessas horas, sempre que possível, preencher as agendas dos dois médicos em simultâneo.</p>
 </div>
 <p>A Ana Pires e o Pedro Barreiros não têm horário fixo: só aparecem na agenda nos dias combinados com a gestão ou quando já têm marcações. O Dr.&nbsp;Renato Conti já não trabalha na clínica.</p>
 </section>
 <section id="como-ler-a-agenda" class="level2">
 <h2 class="anchored" data-anchor-id="como-ler-a-agenda">Como ler a agenda</h2>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>O que se vê</th>
-<th>O que quer dizer</th>
-<th>Marca-se?</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><span class="cor branco"></span> Hora a <strong>branco</strong> (“GR”)</td>
-<td>Horário habitual do médico</td>
-<td>Sim</td>
-</tr>
-<tr class="even">
-<td><span class="cor verde"></span> Hora a <strong>verde claro</strong></td>
-<td>Horas extra só nesse dia (horário pontual)</td>
-<td>Sim — nas férias do Dr.&nbsp;Ricardo, de preferência depois de preenchido o branco da Dra. Mariluz</td>
-</tr>
-<tr class="odd">
-<td><span class="cor cinzento"></span> Hora a <strong>cinzento</strong></td>
-<td>Fora do horário: antes de começar, almoço, depois de acabar</td>
-<td>Não, salvo autorização (ver <a href="#marcar-fora-do-horário">Marcar fora do horário</a>)</td>
-</tr>
-<tr class="even">
-<td><span class="cor laranja"></span> <strong>“Férias”</strong> a laranja</td>
-<td>Médico ausente nesse dia</td>
-<td>Não</td>
-</tr>
-<tr class="odd">
-<td><strong>F</strong> no calendário</td>
-<td>Clínica fechada</td>
-<td>Não</td>
-</tr>
-<tr class="even">
-<td>Coluna <strong>EQUIPA ASSISTENCIAL</strong></td>
-<td>Alguém da equipa está ausente</td>
-<td>Nunca se marca nesta coluna</td>
-</tr>
-</tbody>
-</table>
-<p>Se um médico <strong>não tem coluna</strong> num dia, não trabalha nesse dia. A coluna só aparece se lá houver uma marcação antiga.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<div class="legenda">
+  <div class="item"><span class="cor branco"></span><div><b>Branco ("GR")</b><span>Horário habitual do médico. Marca-se.</span></div></div>
+  <div class="item"><span class="cor verde"></span><div><b>Verde claro</b><span>Horas extra só nesse dia. Em caso de necessidade.</span></div></div>
+  <div class="item"><span class="cor cinzento"></span><div><b>Cinzento</b><span>Fora do horário. Não se marca, salvo autorização.</span></div></div>
+  <div class="item"><span class="cor laranja"></span><div><b>"Férias" a laranja</b><span>Médico ausente. Não se marca.</span></div></div>
+  <div class="item"><span class="cor letra">F</span><div><b>F no calendário</b><span>Clínica fechada.</span></div></div>
+  <div class="item"><span class="cor laranja"></span><div><b>Coluna EQUIPA ASSISTENCIAL</b><span>Alguém da equipa está ausente. Nunca se marca aqui.</span></div></div>
 </div>
-<div class="callout-title-container flex-fill">
-Importante
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p><strong>Já não se escreve “NÃO MARCAR” nem “ENCERRADA” na agenda.</strong> A agenda mostra sozinha quando se pode marcar.</p>
-</div>
-</div>
-<p><strong>Exemplo 1</strong> — numa terça-feira, o Dr.&nbsp;Ricardo não aparece e o almoço da Dra. Mariluz está a cinzento.</p>
-<p><a href="imagens/01_terca_sem_ricardo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="imagens/01_terca_sem_ricardo.png" class="img-fluid" alt="Agenda de uma terça-feira: o Dr. Ricardo não aparece e o almoço da Dra. Mariluz está a cinzento"></a></p>
-<p><strong>Exemplo 2</strong> — numa sexta-feira, a Dra. Mariluz só tem branco das 9h30 às 12h30 e das 14h às 17h30.</p>
-<p><a href="imagens/02_sexta_cinzentos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="imagens/02_sexta_cinzentos.png" class="img-fluid" alt="Agenda de uma sexta-feira: períodos a cinzento da Dra. Mariluz"></a></p>
+<p>Se um médico não tem coluna num dia, não trabalha nesse dia. A coluna só aparece se lá houver uma marcação antiga.</p>
+<p><strong>Exemplo 1.</strong> Numa terça-feira, o Dr.&nbsp;Ricardo não aparece e o almoço da Dra. Mariluz está a cinzento.</p>
+<p><a href="imagens/01_terca_sem_ricardo.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="imagens/01_terca_sem_ricardo.png" class="img-fluid" alt="Agenda de uma terça-feira: o Dr. Ricardo não aparece e o almoço da Dra. Mariluz está a cinzento"></a></p>
+<p><strong>Exemplo 2.</strong> Numa sexta-feira, a Dra. Mariluz só tem branco das 9h30 às 12h30 e das 14h às 17h30.</p>
+<p><a href="imagens/02_sexta_cinzentos.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="imagens/02_sexta_cinzentos.png" class="img-fluid" alt="Agenda de uma sexta-feira: períodos a cinzento da Dra. Mariluz"></a></p>
 <section id="horas-a-verde-férias-do-dr.-ricardo" class="level3">
 <h3 class="anchored" data-anchor-id="horas-a-verde-férias-do-dr.-ricardo">Horas a verde: férias do Dr.&nbsp;Ricardo</h3>
-<p>Quando o Dr.&nbsp;Ricardo está de férias, a Dra. Mariluz assume as horas dele que ficam disponíveis. Essas horas aparecem <strong>a verde</strong> na coluna dela.</p>
-<div class="callout callout-style-default callout-important callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p>Quando o Dr.&nbsp;Ricardo está de férias, a Dra. Mariluz assume as horas dele que ficam disponíveis. Essas horas aparecem a verde na coluna dela.</p>
+<div class="destaque">
+<p><strong>De preferência, o horário habitual.</strong> Nas semanas de férias do Dr.&nbsp;Ricardo, as horas a verde usam-se em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) da Dra. Mariluz. Isto aplica-se apenas às férias do Dr.&nbsp;Ricardo.</p>
 </div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Importante</span>De preferência, o horário habitual
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Nas semanas de férias do Dr.&nbsp;Ricardo, as horas a verde usam-se em caso de necessidade, de preferência depois de preenchidas as horas a branco (horário habitual) da Dra. Mariluz. Isto aplica-se apenas às férias do Dr.&nbsp;Ricardo.</p>
-</div>
-</div>
-<p><strong>Exemplo 3</strong> — a Dra. Mariluz faz o horário do Dr.&nbsp;Ricardo, que está de férias. As horas extra aparecem a verde.</p>
-<p><a href="imagens/15_pontual_verde.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="imagens/15_pontual_verde.png" class="img-fluid" alt="Horas pontuais a verde e horário habitual a branco na coluna da Dra. Mariluz"></a></p>
+<p><strong>Exemplo 3.</strong> A Dra. Mariluz faz o horário do Dr.&nbsp;Ricardo, que está de férias. As horas extra aparecem a verde.</p>
+<p><a href="imagens/15_pontual_verde.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="imagens/15_pontual_verde.png" class="img-fluid" alt="Horas pontuais a verde e horário habitual a branco na coluna da Dra. Mariluz"></a></p>
 </section>
+</section>
+<section id="confirmação-de-consultas" class="level2">
+<h2 class="anchored" data-anchor-id="confirmação-de-consultas">Confirmação de consultas</h2>
+<p>O objetivo é ter a agenda cheia e saber quem vem. A receção tem duas tarefas: enviar ou agendar as SMS de confirmação, e ligar a quem não respondeu.</p>
+<ol class="regras">
+  <li><span class="num">1</span><div><b>Não responder não é faltar.</b><span>Muita gente não responde e aparece na mesma. Nunca desmarcar alguém só porque não respondeu.</span></div></li>
+  <li><span class="num">2</span><div><b>Uma vaga só se liberta se houver quem a ocupe.</b><span>Sem ninguém na Lista de espera, a consulta fica marcada.</span></div></li>
+  <li><span class="num">3</span><div><b>A lista de chamadas está no Novigest.</b><span>Ligar a todas as consultas que ainda estão em "A Confirmar".</span></div></li>
+  <li><span class="num">4</span><div><b>Chamadas feitas até às 16h.</b><span>Assim o doente ainda tem tempo de responder até às 19h.</span></div></li>
+  <li><span class="num">5</span><div><b>Lembretes só depois das 19h.</b><span>Vão só para quem confirmou, por isso agendam-se ao fecho.</span></div></li>
+</ol>
+
+<h3 class="sub3 anchored">Tarefas de cada dia</h3>
+<div class="dias">
+  <div class="dia" data-d="1"><h4 class="anchored">Segunda</h4>
+    <div class="tarefa t-ler"><small>1. Ao abrir</small>Ler as SMS que chegaram no fim de semana</div>
+    <div class="tarefa t-enviar"><small>2. De manhã, enviar</small>SMS de confirmação para as <b>consultas de quinta</b></div>
+    <div class="tarefa t-ligar"><small>3. Até às 16h, ligar a quem não confirmou</small><b>consultas de terça</b> em "A Confirmar"</div></div>
+  <div class="dia" data-d="2"><h4 class="anchored">Terça</h4>
+    <div class="tarefa t-ligar"><small>1. Até às 16h, ligar a quem não confirmou</small><b>consultas de quinta</b> em "A Confirmar"</div>
+    <div class="tarefa t-enviar"><small>2. Depois das 19h, agendar para quarta</small>SMS de confirmação para as <b>consultas de sexta</b><br>Lembrete para as <b>consultas de quinta</b> já confirmadas</div></div>
+  <div class="dia" data-d="4"><h4 class="anchored">Quinta</h4>
+    <div class="tarefa t-ler"><small>1. Ao abrir</small>Ler as SMS que chegaram na quarta</div>
+    <div class="tarefa t-enviar"><small>2. De manhã, enviar</small>SMS de confirmação para as <b>consultas de segunda e sábado</b></div>
+    <div class="tarefa t-ligar"><small>3. Até às 16h, ligar a quem não confirmou</small><b>consultas de sexta</b> em "A Confirmar"</div></div>
+  <div class="dia" data-d="5"><h4 class="anchored">Sexta</h4>
+    <div class="tarefa t-ligar"><small>1. Até às 16h, ligar a quem não confirmou</small><b>consultas de segunda e sábado</b> em "A Confirmar"</div>
+    <div class="tarefa t-enviar"><small>2. Depois das 19h, agendar para domingo</small>SMS de confirmação para as <b>consultas de terça</b><br>Lembrete para as <b>consultas de segunda</b> já confirmadas</div></div>
+</div>
+<p class="suave">Quarta e domingo: clínica fechada. Saem as SMS agendadas na véspera. Sábado: sem tarefas fixas.</p>
+
+<h3 class="sub3 anchored">O que fazer em cada chamada</h3>
+<div class="fluxo">
+  <div class="passo">Ligar ao doente que está em "A Confirmar"</div>
+  <div class="seta"></div>
+  <div class="passo q">Atendeu?</div>
+  <div class="seta"></div>
+  <div class="ramos">
+    <div class="ramo">
+      <span class="pill sim">Sim</span>
+      <div class="passo">Vem: mudar para <b>Confirmada</b>.<br>Não vem: desmarcar e propor outra data. Se não marcar já, vai para <b>Remarcações</b>.</div>
+    </div>
+    <div class="ramo">
+      <span class="pill nao">Não</span>
+      <div class="passo">Enviar logo a <b>SMS de aviso</b> (mensagem 2)</div>
+      <div class="seta"></div>
+      <div class="passo q">Respondeu até às 19h?</div>
+      <div class="seta"></div>
+      <div class="ramos interno">
+        <div class="ramo"><span class="pill sim">Sim</span><div class="passo">Tratar como "Atendeu"</div></div>
+        <div class="ramo"><span class="pill nao">Não</span><div class="passo">Há alguém na <b>Lista de espera</b>?<br>Sim: libertar a vaga e ligar a essa pessoa.<br>Não: a consulta <b>fica marcada</b>.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<h3 class="sub3 anchored">Estados no Novigest</h3>
+<div class="estados">
+  <div><b>A Confirmar</b><span>A SMS de confirmação já saiu e o doente ainda não respondeu. Usar só para isto.</span></div>
+  <div><b>Confirmada</b><span>O doente respondeu SIM, por SMS ou ao telefone.</span></div>
+  <div><b>Remarcações</b><span>O doente não pode vir e ainda não escolheu nova data.</span></div>
+</div>
+
+<h3 class="sub3 anchored">As mensagens</h3>
+<div class="msgs">
+  <article class="msg">
+    <header><h4 class="anchored">1. Confirmação</h4><span class="quem auto">Receção envia ou agenda</span></header>
+    <div class="sms" id="m1">Mariluz Bioclinic: tem consulta a [dia] às [hora]. Por favor confirme respondendo SIM, ou NÃO se precisar de desmarcar.</div>
+    <button type="button" class="copiar" data-alvo="m1">Copiar mensagem</button>
+    <p>Sai 2 a 4 dias antes da consulta. Depois de enviar, pôr as consultas em "A Confirmar". Quem responde SIM passa a "Confirmada".</p>
+  </article>
+  <article class="msg">
+    <header><h4 class="anchored">2. Aviso, quando não atende</h4><span class="quem voce">Envia a receção</span></header>
+    <div class="sms" id="m2">Não conseguimos confirmar a sua consulta de [dia] às [hora]. Se não recebermos resposta até às 19h de hoje, a vaga poderá ser atribuída a outro doente.</div>
+    <button type="button" class="copiar" data-alvo="m2">Copiar mensagem</button>
+    <p>Enviar só depois de ligar e o doente não atender.</p>
+  </article>
+  <article class="msg">
+    <header><h4 class="anchored">3. Lembrete da véspera</h4><span class="quem auto">Receção agenda</span></header>
+    <div class="sms" id="m3">Mariluz Bioclinic: lembramos a sua consulta amanhã, [dia], às [hora]. Se não puder comparecer, avise-nos por favor.</div>
+    <button type="button" class="copiar" data-alvo="m3">Copiar mensagem</button>
+    <p>Só para consultas de segunda e quinta já confirmadas. Agendado na terça e na sexta, depois das 19h.</p>
+  </article>
+</div>
+<div class="nota">
+<p><strong>Consulta marcada em cima da hora?</strong> Se a consulta é marcada depois de a SMS de confirmação já ter saído, confirmá-la logo ao telefone ou ao balcão e pô-la em “Confirmada”.</p>
+</div>
 </section>
 <section id="marcar-fora-do-horário" class="level2">
 <h2 class="anchored" data-anchor-id="marcar-fora-do-horário">Marcar fora do horário</h2>
@@ -303,7 +307,7 @@ Importante
 <li>Clicar em <strong>marcar</strong> (em baixo, à direita).</li>
 <li>Escolher <strong>“Efectuar marcação fora do horário habitual”</strong> e confirmar. Depois marca-se como de costume.</li>
 </ol>
-<p><a href="imagens/03_marcar_fora_horario.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="imagens/03_marcar_fora_horario.png" class="img-fluid" alt="Marcar fora do horário habitual: hora cinzenta, marcar, escolher a opção"></a></p>
+<p><a href="imagens/03_marcar_fora_horario.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="imagens/03_marcar_fora_horario.png" class="img-fluid" alt="Marcar fora do horário habitual: hora cinzenta, marcar, escolher a opção"></a></p>
 </section>
 <section id="pedidos-à-gestão" class="level2">
 <h2 class="anchored" data-anchor-id="pedidos-à-gestão">Pedidos à gestão</h2>
@@ -313,18 +317,8 @@ Importante
 <li><strong>Médico muda o horário num dia</strong> (entra mais tarde, sai mais cedo, almoço noutra hora) <strong>ou vem num dia extra:</strong> médico, dia e horas.</li>
 <li><strong>Clínica fechada ou aberta num dia fora do habitual:</strong> o dia.</li>
 </ul>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-Aviso
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Enquanto o pedido não aparecer na agenda, <strong>não marcar doentes nesses dias ou horas</strong>.</p>
-</div>
+<div class="destaque">
+<p>Enquanto o pedido não aparecer na agenda, não marcar doentes nesses dias ou horas.</p>
 </div>
 <p>Depois de registado, vê-se assim na agenda:</p>
 <ul>
@@ -333,9 +327,9 @@ Aviso
 <li><strong>Horas que o médico deixa de fazer:</strong> cinzento. <strong>Horas extra:</strong> verde.</li>
 <li><strong>Clínica fechada:</strong> F no calendário.</li>
 </ul>
-<p><a href="imagens/11_agenda_ferias.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="imagens/11_agenda_ferias.png" class="img-fluid" alt="Agenda com as férias do médico a laranja"></a></p>
-<p><a href="imagens/14_equipa_assistencial.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="imagens/14_equipa_assistencial.png" class="img-fluid" alt="Coluna EQUIPA ASSISTENCIAL com as férias de uma assistente"></a></p>
-<p><strong>Se já houver doentes marcados nos dias ou horas que saem, pô-los nas <a href="#consultas-a-remarcar-remarcações">Remarcações</a>.</strong> As marcações não desaparecem sozinhas.</p>
+<p><a href="imagens/11_agenda_ferias.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="imagens/11_agenda_ferias.png" class="img-fluid" alt="Agenda com as férias do médico a laranja"></a></p>
+<p><a href="imagens/14_equipa_assistencial.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="imagens/14_equipa_assistencial.png" class="img-fluid" alt="Coluna EQUIPA ASSISTENCIAL com as férias de uma assistente"></a></p>
+<p>Se já houver doentes marcados nos dias ou horas que saem, pô-los nas <a href="#consultas-a-remarcar-remarcações">Remarcações</a>. As marcações não desaparecem sozinhas.</p>
 </section>
 <section id="lembretes-para-ligar-a-doentes-lista-de-espera" class="level2">
 <h2 class="anchored" data-anchor-id="lembretes-para-ligar-a-doentes-lista-de-espera">Lembretes para ligar a doentes: Lista de espera</h2>
@@ -350,10 +344,10 @@ Aviso
 <li>Clicar em <strong>ok</strong>.</li>
 <li>Com a entrada selecionada na lista, escrever em <strong>Notas</strong> o que é preciso fazer, por exemplo “limpeza + controlo” ou “cheque-dentista de grávida”.</li>
 </ol>
-<p><a href="imagens/05_lista_espera.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="imagens/05_lista_espera.png" class="img-fluid" alt="Lista de espera: botão listas, inserir e total por tratar"></a></p>
-<p><a href="imagens/06_lista_espera_inserir.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="imagens/06_lista_espera_inserir.png" class="img-fluid" alt="Adição de entrada na lista de espera: doente, validade, médico, ok"></a></p>
+<p><a href="imagens/05_lista_espera.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="imagens/05_lista_espera.png" class="img-fluid" alt="Lista de espera: botão listas, inserir e total por tratar"></a></p>
+<p><a href="imagens/06_lista_espera_inserir.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="imagens/06_lista_espera_inserir.png" class="img-fluid" alt="Adição de entrada na lista de espera: doente, validade, médico, ok"></a></p>
 <p><strong>Quando o doente fica marcado:</strong> selecioná-lo na lista, usar <strong>vagas</strong> para encontrar uma hora livre e, depois de marcado, <strong>eliminar</strong> a entrada.</p>
-<p>O número de doentes por tratar aparece à esquerda, em <strong>“Total de pacientes em lista de espera”</strong>.</p>
+<p>O número de doentes por tratar aparece à esquerda, em “Total de pacientes em lista de espera”.</p>
 </section>
 <section id="consultas-a-remarcar-remarcações" class="level2">
 <h2 class="anchored" data-anchor-id="consultas-a-remarcar-remarcações">Consultas a remarcar: Remarcações</h2>
@@ -366,8 +360,8 @@ Aviso
 <li>Ao selecionar a entrada, em baixo aparecem as <strong>marcações futuras</strong> do doente. É aí que se vê a consulta original.</li>
 <li>Depois de remarcado, pôr o visto em <strong>Tratado</strong>.</li>
 </ol>
-<p><a href="imagens/07_remarcacoes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="imagens/07_remarcacoes.png" class="img-fluid" alt="Separador Remarcações com o botão inserir e o total pendente"></a></p>
-<p>O número por tratar aparece à esquerda, em <strong>“Total de remarcações pendentes”</strong>.</p>
+<p><a href="imagens/07_remarcacoes.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9"><img src="imagens/07_remarcacoes.png" class="img-fluid" alt="Separador Remarcações com o botão inserir e o total pendente"></a></p>
+<p>O número por tratar aparece à esquerda, em “Total de remarcações pendentes”.</p>
 </section>
 <section id="resumo-o-que-fazer-em-cada-caso" class="level2">
 <h2 class="anchored" data-anchor-id="resumo-o-que-fazer-em-cada-caso">Resumo: o que fazer em cada caso</h2>
@@ -400,48 +394,53 @@ Aviso
 <td>Hora cinzenta → marcar → “fora do horário habitual”</td>
 </tr>
 <tr class="odd">
+<td>Doente não respondeu à SMS de confirmação</td>
+<td>Ligar até às 16h; se não atender, SMS de aviso</td>
+</tr>
+<tr class="even">
 <td>Férias ou ausência de um médico ou de uma assistente</td>
 <td>Pedir à gestão por escrito</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Mudança de horário de um médico</td>
 <td>Pedir à gestão por escrito</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Clínica fecha ou abre fora do habitual</td>
 <td>Pedir à gestão por escrito</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Ligar a um doente para marcar</td>
 <td>listas → Lista de Espera</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Doente desmarcou ou é preciso remarcar</td>
 <td>listas → Remarcações</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>Aviso interno com data</td>
 <td>A definir</td>
 </tr>
 </tbody>
 </table>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Dica</span>Todos os dias
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<ol type="1">
-<li>Abrir <strong>listas</strong> e tratar a Lista de espera e as Remarcações pendentes.</li>
-<li>Devolver todas as chamadas.</li>
-<li>Confirmar as consultas, segundo o procedimento de confirmação.</li>
-</ol>
-</div>
-</div>
+<script>
+(function(){
+  var d=document.getElementById('data-atualizacao');
+  var alvo=document.querySelector('.topo .data');
+  if(d&&alvo){alvo.textContent=d.textContent.trim();}
+  var hoje=new Date().getDay();
+  var el=document.querySelector('.dia[data-d="'+hoje+'"]');
+  if(el){el.classList.add('hoje');var b=document.createElement('span');b.className='badge';b.textContent='Hoje';el.querySelector('h4').appendChild(b);}
+  document.querySelectorAll('button.copiar').forEach(function(btn){
+    btn.addEventListener('click',function(){
+      var t=document.getElementById(btn.dataset.alvo);
+      var ok=function(){btn.textContent='Copiada';setTimeout(function(){btn.textContent='Copiar mensagem'},1800)};
+      var alt=function(){var r=document.createRange();r.selectNodeContents(t);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selecionada: use Ctrl+C'};
+      try{navigator.clipboard.writeText(t.textContent).then(ok,alt)}catch(e){alt()}
+    });
+  });
+})();
+</script>
 
 
 </section>

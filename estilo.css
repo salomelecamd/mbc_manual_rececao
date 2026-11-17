@@ -1,67 +1,171 @@
-/* Estilo do manual da receção — cores tiradas do logo da Mariluz Bioclinic */
+/* Manual da receção — Mariluz Bioclinic
+   Fundo preto, alto contraste, cores tiradas do logo.
+   Para mudar cores, altere só as variáveis abaixo. */
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Outfit:wght@500;600&display=swap");
+
 :root {
-  --mbc-taupe: #8f8677;       /* MARILUZ e símbolo */
-  --mbc-taupe-escuro: #6b6357;/* para texto: mais contraste */
-  --mbc-salvia: #8ca19a;      /* "bio clinic" */
-  --mbc-salvia-escuro: #4f6e65;
-  --mbc-fundo: #f6f4f1;
+  --fundo: #0b0b0b;
+  --cartao: #161514;
+  --cartao2: #1f1d1b;
+  --linha: #34302b;
+  --texto: #f4f1ec;
+  --suave: #b9b0a3;
+  --taupe: #cfc3b0;        /* MARILUZ, clareado para fundo preto */
+  --salvia: #a8cbbf;       /* "bio clinic", clareado */
+  --salvia-fundo: #1b2b26;
+  --quente: #f2b98f; --quente-fundo: #34241a;
+  --neutro-fundo: #232120;
+  --sim: #b4dd9a; --sim-fundo: #1f3418;
+  --nao: #f4a9a9; --nao-fundo: #3d1c1c;
+  --titulos: "Outfit", "Segoe UI", system-ui, sans-serif;
+  --corpo: "Atkinson Hyperlegible", "Segoe UI", system-ui, sans-serif;
 }
-body { font-size: 1.05rem; color: #3a3631; background: #fff;
-       font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif; }
-h1, h2, h3, h4 { font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
-                 color: var(--mbc-taupe-escuro); font-weight: 600; }
-h2 { margin-top: 2.5rem; padding-bottom: .3rem; border-bottom: 2px solid var(--mbc-salvia); }
-a, a:visited { color: var(--mbc-salvia-escuro); }
-#TOC .nav-link.active, #TOC a.active { color: var(--mbc-salvia-escuro) !important;
-                                       border-left-color: var(--mbc-salvia) !important; }
-img { border: 1px solid #d9d4cc; border-radius: 4px; }
 
-/* Cabeçalho com logo */
-.cabecalho { text-align: left; padding: .5rem 0 1.5rem; margin-bottom: 1.5rem;
-             border-bottom: 1px solid #e4dfd8; }
-.cabecalho img.logo, .cabecalho .logo img { border: 0; width: 320px; max-width: 80%; height: auto; }
-.cabecalho p { margin: 0; }
-.cabecalho .titulo { display: block; font-size: 2rem; font-weight: 600; letter-spacing: .02em;
-                     color: var(--mbc-taupe-escuro); margin-top: .8rem; }
-.cabecalho .sub { display: block; color: var(--mbc-salvia-escuro); font-size: 1rem; }
+html, body { background: var(--fundo) !important; color: var(--texto) !important; }
+body { font-family: var(--corpo); font-size: 1.06rem; line-height: 1.6; }
+#title-block-header, .escondido { display: none !important; }
+main, .content, #quarto-content { background: var(--fundo); }
 
-/* Tabelas: cabeçalho em tom do logo */
-thead th { background: var(--mbc-fundo); color: var(--mbc-taupe-escuro); }
-figure figcaption { font-size: .9rem; color: #555; }
+h1, h2, h3, h4 { font-family: var(--titulos); font-weight: 600; color: var(--texto); }
+h2 { margin-top: 3.2rem; padding-bottom: .4rem; border-bottom: 2px solid var(--salvia);
+     font-size: 1.7rem; color: var(--taupe); }
+h3 { color: var(--salvia); font-size: 1.25rem; margin-top: 2rem; }
+p, li, td { color: var(--texto); }
+strong, b { color: #fff; }
+a, a:visited { color: var(--salvia); text-decoration-color: rgba(168,203,191,.5); }
+a:hover { color: #fff; }
+.suave { color: var(--suave); font-size: .95rem; }
 
-/* Caixas de destaque */
-.callout { font-size: 1rem; }
+/* Índice lateral */
+#TOC, #TOC a, .sidebar nav[role="doc-toc"] a { color: var(--suave) !important; }
+#TOC .nav-link.active, #TOC a.active { color: var(--salvia) !important; border-left-color: var(--salvia) !important; }
+#toc-title, .toc-actions { color: var(--taupe) !important; }
+
+/* Topo com logo */
+.topo { padding: 1rem 0 1.6rem; margin-bottom: 1.6rem; border-bottom: 1px solid var(--linha); }
+.topo .logo { width: 330px; max-width: 85%; border: 0 !important; background: none; }
+.topo .titulo { font-size: clamp(2rem, 6vw, 2.8rem); margin: 1.2rem 0 .3rem; color: #fff; border: 0; }
+.topo .lead { font-size: 1.2rem; color: var(--taupe); margin: 0 0 .4rem; max-width: 60ch; }
+.topo .meta { color: var(--salvia); font-size: .95rem; margin: 0; }
+
+/* Caixas */
+.nota, .destaque { border-radius: 12px; padding: 14px 18px; margin: 1.2rem 0; }
+.nota { background: var(--cartao); border: 1px solid var(--linha); }
+.destaque { background: var(--salvia-fundo); border-left: 4px solid var(--salvia); }
+.nota p, .destaque p { margin: 0; }
+
+/* Regras numeradas */
+.regras { list-style: none; padding: 0; margin: 1rem 0; display: grid; gap: 10px; }
+.regras li { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px;
+             padding: 14px 16px; display: grid; grid-template-columns: 34px minmax(0,1fr); gap: 12px; }
+.regras .num { width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+               background: var(--salvia); color: var(--fundo); font-family: var(--titulos); font-weight: 600; }
+.regras b { display: block; font-size: 1.05rem; }
+.regras span:not(.num) { color: var(--suave); font-size: .95rem; }
+
+/* Tarefas */
+.tarefas { display: grid; gap: 10px; margin: 1rem 0; }
+.tarefa { border-radius: 10px; padding: 10px 14px; font-size: 1rem; }
+.tarefa small { display: block; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase;
+                font-weight: 700; opacity: .9; margin-bottom: 2px; }
+.tarefa b { color: inherit; }
+.t-ler { background: var(--neutro-fundo); color: var(--texto); }
+.t-ligar { background: var(--quente-fundo); color: var(--quente); }
+.t-enviar { background: var(--salvia-fundo); color: var(--salvia); }
+.tarefa a { color: inherit; text-decoration: underline; }
+
+/* Médicos */
+.medicos { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin: 1rem 0; }
+.cartao { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 16px 18px; }
+.cartao h3 { margin: 0 0 .6rem; color: var(--taupe); font-size: 1.15rem; }
+.cartao p { margin: .2rem 0; }
+
+/* Legenda da agenda */
+.legenda { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 10px; margin: 1rem 0; }
+.legenda .item { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px;
+                 padding: 12px 14px; display: grid; grid-template-columns: 30px minmax(0,1fr); gap: 12px; align-items: start; }
+.legenda b { display: block; }
+.legenda span:not(.cor) { color: var(--suave); font-size: .93rem; }
+.cor { width: 30px; height: 30px; border-radius: 6px; border: 1px solid #555; display: grid; place-items: center; }
+.branco { background: #ffffff; } .verde { background: #e5fbe5; } .cinzento { background: #c4c4c4; }
+.laranja { background: #f2a66b; } .letra { background: #fbe9cf; color: #1a237e; font-weight: 700; font-family: var(--titulos); }
+
+/* Dias da semana */
+.sub3 { margin-top: 2.2rem; }
+.dias { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 12px; }
+.dia { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 14px; display: grid; gap: 8px; align-content: start; }
+.dia h4 { margin: 0; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center; color: #fff; }
+.dia.hoje { border: 2px solid var(--salvia); }
+.badge { font-family: var(--corpo); font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
+         background: var(--salvia); color: var(--fundo); padding: 3px 8px; border-radius: 6px; }
+
+/* Fluxo da chamada */
+.fluxo { display: grid; justify-items: center; margin: 1rem 0; }
+.passo { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 12px 16px;
+         text-align: center; max-width: 460px; width: 100%; font-size: .98rem; }
+.passo.q { background: var(--salvia-fundo); border-color: var(--salvia); color: var(--salvia); font-weight: 700; }
+.seta { width: 2px; height: 22px; background: var(--linha); position: relative; }
+.seta::after { content: ""; position: absolute; bottom: -1px; left: -5px; border: 6px solid transparent; border-top-color: var(--linha); border-bottom: 0; }
+.ramos { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; width: 100%; max-width: 680px; }
+.ramos.interno { max-width: none; }
+.ramo { display: grid; gap: 8px; align-content: start; justify-items: center; }
+.pill { font-size: .8rem; font-weight: 700; padding: 3px 12px; border-radius: 999px; }
+.sim { background: var(--sim-fundo); color: var(--sim); } .nao { background: var(--nao-fundo); color: var(--nao); }
+
+/* Estados */
+.estados { display: grid; gap: 8px; }
+.estados > div { background: var(--cartao); border: 1px solid var(--linha); border-radius: 10px; padding: 10px 14px;
+                 display: grid; grid-template-columns: 9.5rem minmax(0,1fr); gap: 12px; }
+.estados span { color: var(--suave); }
+
+/* Mensagens */
+.msgs { display: grid; gap: 12px; }
+.msg { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 14px 16px; display: grid; gap: 10px; }
+.msg header { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
+.msg h4 { margin: 0; font-size: 1.1rem; color: #fff; }
+.quem { font-size: .72rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; padding: 3px 8px; border-radius: 6px; }
+.quem.auto { background: var(--salvia-fundo); color: var(--salvia); }
+.quem.voce { background: var(--quente-fundo); color: var(--quente); }
+.sms { background: #000; border: 1px solid var(--linha); border-radius: 10px; padding: 10px 12px; font-size: 1.02rem; }
+.msg p { margin: 0; color: var(--suave); font-size: .92rem; }
+button.copiar { font: inherit; font-size: .9rem; background: transparent; color: var(--texto); border: 1px solid var(--linha);
+                border-radius: 8px; padding: 6px 12px; cursor: pointer; justify-self: start; }
+button.copiar:hover { border-color: var(--salvia); color: var(--salvia); }
+button:focus-visible, a:focus-visible { outline: 2px solid var(--salvia); outline-offset: 2px; }
+
+/* Prints */
+img { border: 1px solid var(--linha); border-radius: 8px; }
+figure figcaption { color: var(--suave); }
 
 /* Tabelas */
-table { font-size: .95rem; }
-td, th { vertical-align: top; }
+table { font-size: .97rem; color: var(--texto); --bs-table-bg: transparent; --bs-table-color: var(--texto); }
+.table, table { border-color: var(--linha) !important; }
+thead th { background: var(--cartao2) !important; color: var(--taupe) !important; border-bottom: 2px solid var(--salvia) !important; }
+td, th { vertical-align: top; border-color: var(--linha) !important; }
+tbody tr:nth-child(odd) td { background: rgba(255,255,255,.02); }
 
-/* Amostras de cor na legenda da agenda */
-.cor { display: inline-block; width: 1.1em; height: 1.1em; border: 1px solid #999;
-       border-radius: 2px; vertical-align: -0.15em; margin-right: .35em; }
-.branco  { background: #ffffff; }
-.verde   { background: #e5fbe5; }
-.cinzento{ background: #c4c4c4; }
-.laranja { background: #f2a66b; }
+/* Listas numeradas e marcadores */
+ol li::marker, ul li::marker { color: var(--salvia); font-weight: 700; }
 
-@media print {
-  #quarto-margin-sidebar, #TOC, nav { display: none !important; }
-  h2 { page-break-before: always; }
-  img { max-width: 100% !important; page-break-inside: avoid; }
-}
-
-/* Telemóvel: as tabelas deslizam dentro da página em vez de a alargar */
+/* Telemóvel */
 @media (max-width: 700px) {
   table { display: block; overflow-x: auto; }
+  .ramos { grid-template-columns: 1fr; }
+  .estados > div { grid-template-columns: 1fr; gap: 2px; }
   body { font-size: 1rem; }
 }
 
-/* A data já aparece no cabeçalho com o logo */
-#title-block-header { display: none; }
+/* Impressão: volta a fundo branco para poupar tinta */
+@media print {
+  html, body, main { background: #fff !important; color: #000 !important; }
+  #quarto-margin-sidebar, #TOC, nav, button.copiar { display: none !important; }
+  .regras li, .cartao, .dia, .msg, .passo, .legenda .item, .nota, .estados > div { background: #fff !important; border-color: #999 !important; }
+  p, li, td, b, strong, h1, h2, h3, h4, .regras span, .suave { color: #000 !important; }
+  img { max-width: 100% !important; page-break-inside: avoid; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
-/* Caixas de destaque nas cores do logo */
-.callout.callout-style-default.callout-note { border-left-color: var(--mbc-taupe) !important; }
-.callout-note .callout-header { background-color: var(--mbc-fundo) !important; }
-.callout-note .callout-icon::before { filter: grayscale(1); }
-.callout.callout-style-default.callout-tip { border-left-color: var(--mbc-salvia) !important; }
-.callout-tip .callout-header { background-color: #eef3f1 !important; }
+/* Ajustes ao tema escuro base */
+.sidebar, #quarto-sidebar, #quarto-margin-sidebar, .quarto-container, #quarto-content, .page-columns { background: var(--fundo) !important; }
+.dias { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 700px) { .dias { grid-template-columns: 1fr; } }

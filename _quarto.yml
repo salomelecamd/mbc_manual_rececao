@@ -9,7 +9,7 @@ website:
 format:
   html:
     lang: pt-PT
-    theme: cosmo
+    theme: darkly
     css: estilo.css
     toc: true
     toc-title: "Neste manual"
