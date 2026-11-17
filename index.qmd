@@ -21,6 +21,8 @@ cada caso. Horários, férias, ausências e dias de encerramento são registados
 A equipa pede por escrito e depois vê o resultado na agenda.
 :::
 
+# 1. O dia a dia
+
 ## As regras da agenda
 
 ```{=html}
@@ -40,8 +42,11 @@ A equipa pede por escrito e depois vê o resultado na agenda.
   <div class="tarefa t-ler"><small>1</small>Abrir <b>listas</b> e tratar a Lista de espera e as Remarcações pendentes.</div>
   <div class="tarefa t-ligar"><small>2</small>Devolver todas as chamadas.</div>
   <div class="tarefa t-enviar"><small>3</small>Confirmar as consultas, segundo o <a href="#confirmação-de-consultas">procedimento de confirmação</a>.</div>
+  <div class="tarefa t-ler"><small>4</small>Ver os <a href="#avisos-do-novigest">Avisos do Novigest</a> (Próteses e Stocks) e o calendário <a href="#avisos-internos-calendário-avisos-mbc">Avisos MBC</a>.</div>
 </div>
 ```
+
+# 2. Agenda
 
 ## Horários dos médicos
 
@@ -114,6 +119,44 @@ e marca-se de forma diferente em cada um:
 **Exemplo 3.** A Dra. Mariluz faz o horário do Dr. Ricardo, que está de férias. As horas extra aparecem a verde.
 
 ![](imagens/15_pontual_verde.png){fig-alt="Horas pontuais a verde e horário habitual a branco na coluna da Dra. Mariluz"}
+
+## Marcar fora do horário
+
+Só se marca numa hora cinzenta quando o médico ou a gestão autorizam, por exemplo um doente às 19h.
+
+1. Clicar na hora cinzenta, na coluna do médico.
+2. Clicar em **marcar** (em baixo, à direita).
+3. Escolher **"Efectuar marcação fora do horário habitual"** e confirmar. Depois marca-se como de costume.
+
+![](imagens/03_marcar_fora_horario.png){fig-alt="Marcar fora do horário habitual: hora cinzenta, marcar, escolher a opção"}
+
+## Pedidos à gestão
+
+Tudo o que muda os horários é feito pela gestão. Pede-se por escrito (email ou mensagem) à Salomé:
+
+- **Férias ou ausência de um médico ou de uma assistente:** nome, data de início e de fim, motivo.
+- **Médico muda o horário num dia** (entra mais tarde, sai mais cedo, almoço noutra hora) **ou vem num dia extra:** médico, dia e horas.
+- **Clínica fechada ou aberta num dia fora do habitual:** o dia.
+
+::: {.destaque}
+Enquanto o pedido não aparecer na agenda, não marcar doentes nesses dias ou horas.
+:::
+
+Depois de registado, vê-se assim na agenda:
+
+- **Férias de um médico:** "Férias" a laranja na coluna dele.
+- **Férias de uma assistente:** aparece a coluna EQUIPA ASSISTENCIAL nesses dias, com o nome de quem está fora.
+- **Horas que o médico deixa de fazer:** cinzento. **Horas extra:** verde.
+- **Clínica fechada:** F no calendário.
+
+![](imagens/11_agenda_ferias.png){fig-alt="Agenda com as férias do médico a laranja"}
+
+![](imagens/14_equipa_assistencial.png){fig-alt="Coluna EQUIPA ASSISTENCIAL com as férias de uma assistente"}
+
+Se já houver doentes marcados nos dias ou horas que saem, pô-los nas
+[Remarcações](#consultas-a-remarcar-remarcações). As marcações não desaparecem sozinhas.
+
+# 3. Doentes
 
 ## Confirmação de consultas
 
@@ -208,41 +251,47 @@ de confirmação, e ligar a quem não respondeu.
 saído, confirmá-la logo ao telefone ou ao balcão e pô-la em "Confirmada".
 :::
 
-## Marcar fora do horário
+## Lembretes para ligar a doentes: Lista de espera
 
-Só se marca numa hora cinzenta quando o médico ou a gestão autorizam, por exemplo um doente às 19h.
+Os lembretes do tipo "ligar para agendar limpeza" ou "passaram 6 meses, avisar" vão para a
+**Lista de espera**. Deixam de ser marcações "A confirmar" às 9h na coluna de um médico.
 
-1. Clicar na hora cinzenta, na coluna do médico.
-2. Clicar em **marcar** (em baixo, à direita).
-3. Escolher **"Efectuar marcação fora do horário habitual"** e confirmar. Depois marca-se como de costume.
+**Para acrescentar um doente:**
 
-![](imagens/03_marcar_fora_horario.png){fig-alt="Marcar fora do horário habitual: hora cinzenta, marcar, escolher a opção"}
+1. Clicar em **listas** (em cima, à esquerda).
+2. No separador **Lista de Espera**, clicar em **inserir**.
+3. Procurar o doente pelo nome, código ou NIF.
+4. Em **Validade**, pôr a data até à qual o doente deve ser marcado.
+5. Escolher o **Médico**. Se o doente só puder em certos dias, tirar o visto aos outros em **Restrições**.
+6. Clicar em **ok**.
+7. Com a entrada selecionada na lista, escrever em **Notas** o que é preciso fazer, por exemplo "limpeza + controlo" ou "cheque-dentista de grávida".
 
-## Pedidos à gestão
+![](imagens/05_lista_espera.png){fig-alt="Lista de espera: botão listas, inserir e total por tratar"}
 
-Tudo o que muda os horários é feito pela gestão. Pede-se por escrito (email ou mensagem) à Salomé:
+![](imagens/06_lista_espera_inserir.png){fig-alt="Adição de entrada na lista de espera: doente, validade, médico, ok"}
 
-- **Férias ou ausência de um médico ou de uma assistente:** nome, data de início e de fim, motivo.
-- **Médico muda o horário num dia** (entra mais tarde, sai mais cedo, almoço noutra hora) **ou vem num dia extra:** médico, dia e horas.
-- **Clínica fechada ou aberta num dia fora do habitual:** o dia.
+**Quando o doente fica marcado:** selecioná-lo na lista, usar **vagas** para encontrar uma hora livre e,
+depois de marcado, **eliminar** a entrada.
 
-::: {.destaque}
-Enquanto o pedido não aparecer na agenda, não marcar doentes nesses dias ou horas.
-:::
+O número de doentes por tratar aparece à esquerda, em "Total de pacientes em lista de espera".
 
-Depois de registado, vê-se assim na agenda:
+## Consultas a remarcar: Remarcações
 
-- **Férias de um médico:** "Férias" a laranja na coluna dele.
-- **Férias de uma assistente:** aparece a coluna EQUIPA ASSISTENCIAL nesses dias, com o nome de quem está fora.
-- **Horas que o médico deixa de fazer:** cinzento. **Horas extra:** verde.
-- **Clínica fechada:** F no calendário.
+Quando um doente desmarca e é preciso voltar a marcar, ou quando uma ausência do médico obriga a mudar
+consultas, o doente vai para as **Remarcações**.
 
-![](imagens/11_agenda_ferias.png){fig-alt="Agenda com as férias do médico a laranja"}
+1. Clicar em **listas** e abrir o separador **Remarcações**.
+2. Clicar em **inserir** e escrever o código do doente (ou procurar pelo nome).
+3. Em **Data**, pôr a data da consulta que é preciso mudar e escolher o **Médico**.
+4. Na caixa grande, escrever o motivo e clicar em **ok**.
+5. Ao selecionar a entrada, em baixo aparecem as **marcações futuras** do doente. É aí que se vê a consulta original.
+6. Depois de remarcado, pôr o visto em **Tratado**.
 
-![](imagens/14_equipa_assistencial.png){fig-alt="Coluna EQUIPA ASSISTENCIAL com as férias de uma assistente"}
+![](imagens/07_remarcacoes.png){fig-alt="Separador Remarcações com o botão inserir e o total pendente"}
 
-Se já houver doentes marcados nos dias ou horas que saem, pô-los nas
-[Remarcações](#consultas-a-remarcar-remarcações). As marcações não desaparecem sozinhas.
+O número por tratar aparece à esquerda, em "Total de remarcações pendentes".
+
+# 4. Avisos, material e próteses
 
 ## Avisos internos: calendário Avisos MBC
 
@@ -285,48 +334,120 @@ pessoa da equipa faz isto uma vez, no computador e no telemóvel:
 4. Em **Notificações de eventos para todo o dia**, pôr: *Notificação 1 dia antes, às 09:00*, *Notificação 0 dias antes, às 09:00* e *Email 1 semana antes, às 09:00*.
 5. **Ligar as notificações** da app Google Calendar no telemóvel e as do browser no computador.
 
+## Avisos do Novigest
 
-## Lembretes para ligar a doentes: Lista de espera
+No Novigest há um ecrã **Avisos** que junta, num só sítio, o que está pendente: próteses, stocks,
+orçamentos, consultas por fechar, remarcações, aniversários. Os avisos são gerados pelo próprio Novigest a
+partir do que está registado: **só aparecem se as próteses e o material forem registados** (ver abaixo).
 
-Os lembretes do tipo "ligar para agendar limpeza" ou "passaram 6 meses, avisar" vão para a
-**Lista de espera**. Deixam de ser marcações "A confirmar" às 9h na coluna de um médico.
+Os separadores a vermelho têm itens por tratar. Duplo clique numa linha abre esse item.
 
-**Para acrescentar um doente:**
+![](imagens/26_avisos_proteses.png){fig-alt="Ecrã Avisos do Novigest, separador Próteses"}
 
-1. Clicar em **listas** (em cima, à esquerda).
-2. No separador **Lista de Espera**, clicar em **inserir**.
-3. Procurar o doente pelo nome, código ou NIF.
-4. Em **Validade**, pôr a data até à qual o doente deve ser marcado.
-5. Escolher o **Médico**. Se o doente só puder em certos dias, tirar o visto aos outros em **Restrições**.
-6. Clicar em **ok**.
-7. Com a entrada selecionada na lista, escrever em **Notas** o que é preciso fazer, por exemplo "limpeza + controlo" ou "cheque-dentista de grávida".
+## Material: Stocks
 
-![](imagens/05_lista_espera.png){fig-alt="Lista de espera: botão listas, inserir e total por tratar"}
+O stock serve para saber o que há na clínica e o que está a acabar, sem ter de ir ao armário contar. Só
+funciona se **tudo o que entra e tudo o que sai** for registado.
 
-![](imagens/06_lista_espera_inserir.png){fig-alt="Adição de entrada na lista de espera: doente, validade, médico, ok"}
+```{=html}
+<div class="legenda">
+  <div class="item"><span class="cor letra">+</span><div><b>Entrada</b><span>Chegou material do fornecedor.</span></div></div>
+  <div class="item"><span class="cor letra">−</span><div><b>Saída</b><span>Abriu-se ou gastou-se uma embalagem.</span></div></div>
+  <div class="item"><span class="cor letra">?</span><div><b>Pedido</b><span>Está a acabar: pedir à gestão para encomendar.</span></div></div>
+</div>
+```
 
-**Quando o doente fica marcado:** selecioná-lo na lista, usar **vagas** para encontrar uma hora livre e,
-depois de marcado, **eliminar** a entrada.
+Tudo se faz em **Módulos → Stocks**.
 
-O número de doentes por tratar aparece à esquerda, em "Total de pacientes em lista de espera".
+### Ver o que há em stock
 
-## Consultas a remarcar: Remarcações
+Em **Existências** aparece cada produto com a quantidade que existe. Para encontrar um produto, escrever o
+nome em **Produto**. As cores mostram o que precisa de atenção:
 
-Quando um doente desmarca e é preciso voltar a marcar, ou quando uma ausência do médico obriga a mudar
-consultas, o doente vai para as **Remarcações**.
+| Cor | Quer dizer |
+|---|---|
+| Vermelho | Stock negativo: saiu mais do que entrou (há um registo em falta) |
+| Amarelo | Abaixo do mínimo: é preciso encomendar |
+| Azul | Abaixo do ideal: encomendar na próxima encomenda |
+| Laranja / roxo | Validade a terminar |
 
-1. Clicar em **listas** e abrir o separador **Remarcações**.
-2. Clicar em **inserir** e escrever o código do doente (ou procurar pelo nome).
-3. Em **Data**, pôr a data da consulta que é preciso mudar e escolher o **Médico**.
-4. Na caixa grande, escrever o motivo e clicar em **ok**.
-5. Ao selecionar a entrada, em baixo aparecem as **marcações futuras** do doente. É aí que se vê a consulta original.
-6. Depois de remarcado, pôr o visto em **Tratado**.
+![](imagens/20_stock_existencias.png){fig-alt="Existências: quantidade de cada produto e cores dos alertas"}
 
-![](imagens/07_remarcacoes.png){fig-alt="Separador Remarcações com o botão inserir e o total pendente"}
+### Quando chega material: Entrada
 
-O número por tratar aparece à esquerda, em "Total de remarcações pendentes".
+1. Em **Entrada**, clicar em **criar** (em baixo).
+2. Escolher o **Fornecedor** (o que vem na fatura ou guia).
+3. Em **Armazém**, escolher **Armazém**.
+4. Clicar em **inserir**, escolher o produto e escrever a quantidade e o valor da fatura. Repetir para cada produto.
+5. Clicar em **confirmar**.
 
-## Resumo: o que fazer em cada caso
+![](imagens/23_stock_entrada.png){fig-alt="Movimentos de entrada: fornecedor, armazém, inserir, confirmar"}
+
+### Quando se gasta material: Saída
+
+Regista-se uma saída **sempre que se abre uma embalagem nova** (ou se deita fora um produto estragado ou fora
+de validade). Não é preciso registar cada uso numa consulta.
+
+1. Em **Saída**, clicar em **criar** (em baixo).
+2. Clicar em **inserir** e escolher o produto.
+3. Confirmar a **Qtd** (normalmente 1).
+4. Escolher o **Motivo** (obrigatório).
+5. Clicar em **confirmar**.
+
+![](imagens/21_stock_saida.png){fig-alt="Movimentos de saída: inserir, quantidade, motivo, confirmar"}
+
+| Motivo | Quando usar |
+|---|---|
+| Acabou | Abriu-se uma embalagem nova porque a anterior acabou |
+| Tratamento / Consulta | Material gasto num doente em concreto |
+| Danificado | Partiu-se ou estragou-se |
+| Validade | Deitado fora por estar fora de validade |
+| Devolução | Devolvido ao fornecedor |
+| Outro | Qualquer outro caso (explicar em Notas) |
+
+### Quando está a acabar: pedir à gestão
+
+1. Em **Pedidos**, abrir **Requerer**.
+2. Em **Armazém**, escolher **Armazém**.
+3. Clicar em **inserir**, escolher o produto e a quantidade.
+4. Clicar em **enviar**. O pedido fica registado para a gestão encomendar.
+
+![](imagens/24_stock_pedir.png){fig-alt="Requisição de artigos: pedidos, requerer, armazém, inserir, enviar"}
+
+### Ver os alertas
+
+Os produtos abaixo do mínimo aparecem também em **Avisos → Stocks**, separador **Alertas**. Os mínimos de
+cada produto são definidos pela gestão.
+
+![](imagens/25_avisos_stocks.png){fig-alt="Avisos do Novigest, separador Stocks com os alertas"}
+
+## Próteses e trabalhos de laboratório
+
+O módulo de próteses serve para seguir cada trabalho de laboratório (coroas, aparelhos, goteiras, etc.)
+desde que sai da clínica até ser entregue ao doente, sem depender da memória ou de papéis.
+
+Em **Módulos → Próteses**, os trabalhos aparecem organizados pelo sítio onde estão:
+
+| Grupo | Separador | Quer dizer |
+|---|---|---|
+| **No laboratório** | Pendentes em atraso | Passou a data prevista e ainda não voltou: ligar ao laboratório |
+| | Outras pendentes | Está no laboratório, dentro do prazo |
+| **Na clínica** | Para enviar | Já foi registado mas ainda não saiu para o laboratório |
+| | Para prova ou entrega | Voltou do laboratório: marcar o doente |
+| **Fechadas** | Entregues / Canceladas | Concluídas |
+
+![](imagens/27_proteses_modulo.png){fig-alt="Gestão de próteses: no laboratório, na clínica, fechadas"}
+
+Os mesmos trabalhos aparecem em **Avisos → Próteses** (por enviar, por rececionar, por entregar).
+
+::: {.destaque}
+**Em preparação:** o registo de uma prótese nova (onde e quando se cria) ainda está a ser confirmado com a
+Tactis. Esta secção vai ser completada.
+:::
+
+# 5. Resumo
+
+## O que fazer em cada caso
 
 | Situação | O que fazer |
 |---|---|
@@ -342,6 +463,10 @@ O número por tratar aparece à esquerda, em "Total de remarcações pendentes".
 | Ligar a um doente para marcar | listas → Lista de Espera |
 | Doente desmarcou ou é preciso remarcar | listas → Remarcações |
 | Aviso interno com data | Calendário Google Avisos MBC |
+| Chegou material | Stocks → Entrada |
+| Abriu-se uma embalagem nova, ou produto estragado ou fora de validade | Stocks → Saída |
+| Material a acabar | Stocks → Pedidos → Requerer |
+| Saber se uma prótese já voltou do laboratório | Próteses (ou Avisos → Próteses) |
 
 ```{=html}
 <script>
@@ -363,3 +488,4 @@ O número por tratar aparece à esquerda, em "Total de remarcações pendentes".
 })();
 </script>
 ```
+

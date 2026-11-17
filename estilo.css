@@ -168,3 +168,11 @@ ol li::marker, ul li::marker { color: var(--salvia); font-weight: 700; }
 .sidebar, #quarto-sidebar, #quarto-margin-sidebar, .quarto-container, #quarto-content, .page-columns { background: var(--fundo) !important; }
 .dias { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 700px) { .dias { grid-template-columns: 1fr; } }
+
+/* Partes do manual (títulos de nível 1) */
+main h1:not(.titulo) { font-family: var(--titulos); font-size: 1.15rem; font-weight: 600; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--fundo); background: var(--salvia); padding: .55rem 1rem;
+  border-radius: 8px; margin: 4rem 0 0; border: 0; }
+main h1:not(.titulo) + h2, main h1:not(.titulo) + section > h2 { margin-top: 1.4rem; }
+#TOC > ul > li > a { color: var(--taupe) !important; font-weight: 600; text-transform: uppercase;
+  font-size: .78rem; letter-spacing: .08em; margin-top: .6rem; }
