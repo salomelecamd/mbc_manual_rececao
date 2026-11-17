@@ -244,6 +244,40 @@ Depois de registado, vê-se assim na agenda:
 Se já houver doentes marcados nos dias ou horas que saem, pô-los nas
 [Remarcações](#consultas-a-remarcar-remarcações). As marcações não desaparecem sozinhas.
 
+## Avisos internos: calendário Avisos MBC
+
+Os avisos internos com data vão para o calendário **Avisos MBC**, no Google Calendar. Não se usam
+notas na agenda do Novigest nem a mensagem global.
+
+- **Com hora:** técnicos, entregas, reuniões, visitas.
+- **De dia inteiro:** prazos, pagamentos, encomendas, entregas sem hora marcada.
+
+**Para criar um aviso:**
+
+1. Abrir o Google Calendar e clicar no dia (e na hora, se tiver).
+2. Escrever um título curto e claro, por exemplo "Técnico do ar condicionado" ou "Pagar laboratório".
+3. Em **calendário**, escolher **Avisos MBC**. Se não tiver hora, marcar **Todo o dia**.
+4. Se for preciso, acrescentar uma nota na descrição, por exemplo um contacto ou um valor.
+5. Clicar em **Guardar**.
+
+::: {.destaque}
+**Avisos para quinta ou segunda:** o aviso de "1 dia antes" chega à quarta ou ao domingo, com a clínica
+fechada. Nesses casos, acrescentar no próprio evento uma notificação de **2 dias antes**.
+:::
+
+### Configurar as notificações (cada pessoa, uma vez)
+
+As notificações são de cada pessoa: quem cria o calendário não as pode ligar pelas outras. Cada
+pessoa da equipa faz isto uma vez, no computador e no telemóvel:
+
+1. **Aceitar a partilha** do calendário Avisos MBC, para que apareça na lista de calendários.
+2. Abrir as **definições do calendário Avisos MBC** (os três pontos ao lado do nome → *Definições e partilha*).
+3. Em **Notificações de eventos**, pôr: *Notificação 1 dia* e *Notificação 30 minutos*.
+4. Em **Notificações de eventos para todo o dia**, pôr: *Notificação 1 dia antes, às 09:00*, *Notificação 0 dias antes, às 09:00* e *Email 1 semana antes, às 09:00*.
+5. **Ligar as notificações** da app Google Calendar no telemóvel e as do browser no computador.
+
+![](imagens/16_notificacoes_calendario.png){fig-alt="Definições do calendário Avisos MBC: notificações de eventos e de eventos de todo o dia"}
+
 ## Lembretes para ligar a doentes: Lista de espera
 
 Os lembretes do tipo "ligar para agendar limpeza" ou "passaram 6 meses, avisar" vão para a
@@ -299,7 +333,7 @@ O número por tratar aparece à esquerda, em "Total de remarcações pendentes".
 | Clínica fecha ou abre fora do habitual | Pedir à gestão por escrito |
 | Ligar a um doente para marcar | listas → Lista de Espera |
 | Doente desmarcou ou é preciso remarcar | listas → Remarcações |
-| Aviso interno com data | A definir |
+| Aviso interno com data | Calendário Google Avisos MBC |
 
 ```{=html}
 <script>
