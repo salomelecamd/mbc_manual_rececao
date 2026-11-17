@@ -11,6 +11,10 @@ format:
     lang: pt-PT
     theme: darkly
     css: estilo.css
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Outfit:wght@500;600&display=swap">
     toc: true
     toc-title: "Neste manual"
     toc-depth: 2

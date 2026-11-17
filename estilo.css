@@ -1,7 +1,6 @@
 /* Manual da receção — Mariluz Bioclinic
    Fundo preto, alto contraste, cores tiradas do logo.
    Para mudar cores, altere só as variáveis abaixo. */
-@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Outfit:wght@500;600&display=swap");
 
 :root {
   --fundo: #0b0b0b;
