@@ -95,6 +95,9 @@ a:hover { color: #fff; }
 .dia { background: var(--cartao); border: 1px solid var(--linha); border-radius: 12px; padding: 14px; display: grid; gap: 8px; align-content: start; }
 .dia h4 { margin: 0; font-size: 1.2rem; display: flex; justify-content: space-between; align-items: center; color: #fff; }
 .dia.hoje { border: 2px solid var(--salvia); }
+.dia.fechado { background: var(--neutro-fundo); border-style: dashed; }
+.dia.fechado h4 em { font-style: normal; font-size: .8rem; font-weight: 400; color: var(--suave); }
+.t-auto { background: transparent; border: 1px dashed var(--salvia); color: var(--salvia); }
 .badge { font-family: var(--corpo); font-size: .7rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase;
          background: var(--salvia); color: var(--fundo); padding: 3px 8px; border-radius: 6px; }
 
