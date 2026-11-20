@@ -120,7 +120,15 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#material-stocks" id="toc-material-stocks" class="nav-link" data-scroll-target="#material-stocks">Material: Stocks</a></li>
   <li><a href="#próteses-e-trabalhos-de-laboratório" id="toc-próteses-e-trabalhos-de-laboratório" class="nav-link" data-scroll-target="#próteses-e-trabalhos-de-laboratório">Próteses e trabalhos de laboratório</a></li>
   </ul></li>
-  <li><a href="#resumo" id="toc-resumo" class="nav-link" data-scroll-target="#resumo">5. Resumo</a>
+  <li><a href="#faturas-de-fornecedores" id="toc-faturas-de-fornecedores" class="nav-link" data-scroll-target="#faturas-de-fornecedores">5. Faturas de fornecedores</a>
+  <ul class="collapse">
+  <li><a href="#o-que-entra-sozinho" id="toc-o-que-entra-sozinho" class="nav-link" data-scroll-target="#o-que-entra-sozinho">O que entra sozinho</a></li>
+  <li><a href="#o-que-a-receção-faz" id="toc-o-que-a-receção-faz" class="nav-link" data-scroll-target="#o-que-a-receção-faz">O que a receção faz</a></li>
+  <li><a href="#verificar-se-está-a-correr-bem" id="toc-verificar-se-está-a-correr-bem" class="nav-link" data-scroll-target="#verificar-se-está-a-correr-bem">Verificar se está a correr bem</a></li>
+  <li><a href="#a-folha" id="toc-a-folha" class="nav-link" data-scroll-target="#a-folha">A folha</a></li>
+  <li><a href="#quando-é-que-o-automatismo-corre" id="toc-quando-é-que-o-automatismo-corre" class="nav-link" data-scroll-target="#quando-é-que-o-automatismo-corre">Quando é que o automatismo corre</a></li>
+  </ul></li>
+  <li><a href="#resumo" id="toc-resumo" class="nav-link" data-scroll-target="#resumo">6. Resumo</a>
   <ul class="collapse">
   <li><a href="#o-que-fazer-em-cada-caso" id="toc-o-que-fazer-em-cada-caso" class="nav-link" data-scroll-target="#o-que-fazer-em-cada-caso">O que fazer em cada caso</a></li>
   </ul></li>
@@ -187,6 +195,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="tarefa t-ligar"><small>2</small>Devolver todas as chamadas.</div>
   <div class="tarefa t-enviar"><small>3</small>Confirmar as consultas, segundo o <a href="#confirmação-de-consultas">procedimento de confirmação</a>.</div>
   <div class="tarefa t-ler"><small>4</small>Ver os <a href="#avisos-do-novigest">Avisos do Novigest</a> (Próteses e Stocks) e o calendário <a href="#avisos-internos-calendário-avisos-mbc">Avisos MBC</a>.</div>
+  <div class="tarefa t-ler"><small>5</small>Ver os emails com o marcador <a href="#o-que-a-receção-faz">Faturas/Ação necessária</a> e registar no Novigest as faturas <b>Por registar</b>.</div>
 </div>
 </section>
 </section>
@@ -288,18 +297,18 @@ ul.task-list li input[type="checkbox"] {
 
 <h3 class="sub3 anchored">Tarefas de cada dia</h3>
 <div class="dias">
-  <div class="dia" data-d="1"><h4>Segunda</h4>
+  <div class="dia" data-d="1"><h4 class="anchored">Segunda</h4>
     <div class="tarefa t-ler"><small>1. Ao abrir</small>Ler as SMS que chegaram no fim de semana</div>
     <div class="tarefa t-enviar"><small>2. De manhã, enviar</small>SMS de confirmação para as <b>consultas de quinta</b></div>
     <div class="tarefa t-ligar"><small>3. Até às 16h, ligar a quem não confirmou</small><b>consultas de terça</b> em "A Confirmar"</div></div>
-  <div class="dia" data-d="2"><h4>Terça</h4>
+  <div class="dia" data-d="2"><h4 class="anchored">Terça</h4>
     <div class="tarefa t-enviar"><small>1. De manhã, enviar</small>SMS de confirmação para as <b>consultas de sexta</b></div>
     <div class="tarefa t-ligar"><small>2. Até às 16h, ligar a quem não confirmou</small><b>consultas de quinta</b> em "A Confirmar"</div></div>
-  <div class="dia" data-d="4"><h4>Quinta</h4>
+  <div class="dia" data-d="4"><h4 class="anchored">Quinta</h4>
     <div class="tarefa t-ler"><small>1. Ao abrir</small>Ler as SMS que chegaram na quarta</div>
     <div class="tarefa t-enviar"><small>2. De manhã, enviar</small>SMS de confirmação para as <b>consultas de segunda e sábado</b></div>
     <div class="tarefa t-ligar"><small>3. Até às 16h, ligar a quem não confirmou</small><b>consultas de sexta</b> em "A Confirmar"</div></div>
-  <div class="dia" data-d="5"><h4>Sexta</h4>
+  <div class="dia" data-d="5"><h4 class="anchored">Sexta</h4>
     <div class="tarefa t-enviar"><small>1. De manhã, enviar</small>SMS de confirmação para as <b>consultas de terça</b></div>
     <div class="tarefa t-ligar"><small>2. Até às 16h, ligar a quem não confirmou</small><b>consultas de segunda e sábado</b> em "A Confirmar"</div></div>
 </div>
@@ -604,8 +613,107 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 </section>
+<section id="faturas-de-fornecedores" class="level1">
+<h1>5. Faturas de fornecedores</h1>
+<p>As faturas e os comprovativos de pagamento dos fornecedores são organizados por um <strong>automatismo</strong> no Google da clínica (conta geral@). Ele lê o email e algumas pastas do Drive, guarda os PDF e regista tudo na folha <strong>Faturas fornecedores – registo</strong>. A receção usa a folha para registar as faturas no Novigest e trata do que o automatismo não consegue decidir sozinho.</p>
+<section id="o-que-entra-sozinho" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-entra-sozinho">O que entra sozinho</h2>
+<ul>
+<li><strong>Faturas e comprovativos que chegam por email ao geral@</strong> de fornecedores conhecidos: o PDF é guardado no Drive e a fatura aparece na folha. O email fica lido, sai da caixa de entrada e recebe o marcador <strong>Faturas</strong> ou <strong>Comprovativos</strong>.</li>
+<li><strong>Débitos diretos</strong> (seguros, telecomunicações, eletricidade, água, renting): contam como pagos quando chega a data de vencimento.</li>
+<li><strong>Comprovativos de transferência do Santander</strong>: ficam ligados à fatura pelo número escrito no descritivo da transferência.</li>
+</ul>
+<div class="destaque">
+<p><strong>Não é imediato.</strong> O automatismo corre de 10 em 10 minutos. Uma fatura que acabou de chegar por email ou de ser posta na pasta ainda não está na folha nem foi arquivada: aparece até cerca de 10 minutos depois. Para não esperar, usar <a href="#quando-é-que-o-automatismo-corre">Processar agora</a>.</p>
+</div>
+<p><strong>Onde fica o email depois de tratado.</strong> Quando o automatismo trata um email de fatura ou comprovativo, o email <strong>sai da caixa de entrada</strong> (não é apagado). Para o encontrar, abrir o marcador <strong>Faturas</strong> ou <strong>Comprovativos</strong> no Gmail. A exceção são os emails que pedem alguma coisa (ver <em>Faturas/Ação necessária</em> abaixo), que ficam na caixa de entrada.</p>
+<p>Abrir um email antes de o automatismo correr não faz mal: a fatura é registada na mesma. <strong>Não apagar</strong> nem mandar para o spam emails de faturas, porque esses deixam de ser lidos.</p>
+</section>
+<section id="o-que-a-receção-faz" class="level2">
+<h2 class="anchored" data-anchor-id="o-que-a-receção-faz">O que a receção faz</h2>
+<p><strong>Fatura em papel:</strong> digitalizar (ou fotografar) e pôr o ficheiro no Drive, em *Faturas fornecedores → _Entrada → Faturas<em>. Um comprovativo em papel vai para </em>_Entrada → Comprovativos*.</p>
+<div class="destaque">
+<p><strong>Uma fatura = um ficheiro.</strong> Nunca digitalizar várias faturas para o mesmo PDF: o automatismo só regista uma e as outras perdem-se. Se o scanner juntar tudo, separar antes de pôr na pasta. Uma fatura com várias páginas é um só ficheiro, com todas as páginas.</p>
+</div>
+<ul>
+<li><strong>Não é preciso dar nome ao ficheiro.</strong> O automatismo lê a fatura e muda-lhe o nome sozinho (data, fornecedor e número), e tira-a da pasta *_Entrada* depois de a tratar.</li>
+<li><strong>Digitalizar bem:</strong> o automatismo lê o texto do PDF, por isso uma digitalização má dá erros de leitura (número, data ou valor errados). Folha direita, inteira e sem sombras; texto nítido; todas as páginas. Sempre que possível, preferir o PDF original enviado pelo fornecedor.</li>
+</ul>
+<p><a href="imagens/34_faturas_entrada.png" class="lightbox" data-gallery="quarto-lightbox-gallery-20"><img src="imagens/34_faturas_entrada.png" class="img-fluid" alt="Pasta _Entrada no Drive, com as subpastas Comprovativos e Faturas"></a></p>
+<p><strong>Emails com marcadores</strong> (no Gmail do geral@):</p>
+<p><a href="imagens/30_faturas_marcadores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-21"><img src="imagens/30_faturas_marcadores.png" class="img-fluid" alt="Marcadores no Gmail: Comprovativos, Faturas, Faturas/Ação necessária, Faturas/Rever"></a></p>
+<ul>
+<li><strong>Faturas/Ação necessária:</strong> o email trazia uma fatura ou comprovativo, mas <strong>também pede alguma coisa</strong> (por exemplo, devolver uma cópia assinada, confirmar a receção de uma nota de crédito, um pagamento em atraso). Fica na caixa de entrada, por ler e com estrela. Ler, tratar ou passar à gestão, e <strong>arquivar só depois de tratado</strong>.</li>
+<li><strong>Faturas/Rever:</strong> remetente desconhecido com uma possível fatura. Abrir: se for fatura de um fornecedor da clínica, mudar o marcador para <strong>Faturas</strong>; se não for, tirar o marcador.</li>
+</ul>
+<p><a href="imagens/31_faturas_email_acao.png" class="lightbox" data-gallery="quarto-lightbox-gallery-22"><img src="imagens/31_faturas_email_acao.png" class="img-fluid" alt="Email na caixa de entrada com estrela e os marcadores Faturas e Faturas/Ação necessária"></a></p>
+<div class="destaque">
+<p>Nunca arquivar um email com o marcador <strong>Faturas/Ação necessária</strong> sem tratar o pedido. Na dúvida, reencaminhar à gestão.</p>
+</div>
+<p><strong>Registar no Novigest:</strong> na folha, separador <strong>Registo</strong>, as faturas com estado <strong>Por registar</strong> são as que faltam no Novigest. Depois de registar, mudar o estado para <strong>Registada no Novigest</strong>.</p>
+</section>
+<section id="verificar-se-está-a-correr-bem" class="level2">
+<h2 class="anchored" data-anchor-id="verificar-se-está-a-correr-bem">Verificar se está a correr bem</h2>
+<p>O automatismo poupa trabalho, mas <strong>não substitui a verificação da receção</strong>. Ao registar cada fatura no Novigest, e sempre que se puser um ficheiro na pasta *_Entrada*:</p>
+<ol type="1">
+<li><strong>A fatura apareceu na folha?</strong> Se, 10 a 15 minutos depois, não estiver no Registo, usar <em>Processar agora</em>. Se continuar sem aparecer, avisar a gestão.</li>
+<li><strong>Os dados batem com o PDF?</strong> Abrir o PDF (coluna <em>PDF</em>) e comparar <strong>fornecedor, número, data e valor</strong>. Se algum estiver errado, <strong>corrigir na folha</strong>: na execução seguinte o ficheiro é renomeado com os dados certos.</li>
+<li>**A pasta *_Entrada* esvaziou?** Um ficheiro que fica lá mais de 10 a 15 minutos não foi lido (por exemplo, porque não é PDF ou fotografia). Avisar a gestão.</li>
+<li><strong>Ainda há emails a pedir ação?</strong> Ver o aviso no separador <em>A pagar</em> e o marcador <em>Faturas/Ação necessária</em>.</li>
+</ol>
+<div class="destaque">
+<p>Na dúvida, não apagar nada: avisar a gestão.</p>
+</div>
+</section>
+<section id="a-folha" class="level2">
+<h2 class="anchored" data-anchor-id="a-folha">A folha</h2>
+<p><a href="imagens/33_faturas_separadores.png" class="lightbox" data-gallery="quarto-lightbox-gallery-23"><img src="imagens/33_faturas_separadores.png" class="img-fluid" alt="Separadores da folha: Registo, A pagar, Recentes, Pagamentos, Outros documentos, Fornecedores, Cruzamento Novigest, Erros"></a></p>
+<ul>
+<li><strong>Registo:</strong> todas as faturas desde setembro de 2026, com a data de vencimento e o que está pago.</li>
+<li><strong>A pagar:</strong> só o que está em dívida, ordenado pela data de vencimento. As vencidas aparecem a vermelho, com os dias em atraso.</li>
+<li><strong>Recentes:</strong> tudo, do mais recente para o mais antigo.</li>
+<li>Os outros separadores são de apoio e não precisam de ser abertos no dia a dia.</li>
+</ul>
+<p><a href="imagens/32_faturas_a_pagar.png" class="lightbox" data-gallery="quarto-lightbox-gallery-24"><img src="imagens/32_faturas_a_pagar.png" class="img-fluid" alt="Separador A pagar com a caixa Processar agora e o aviso de emails a pedir ação (fornecedores e valores desfocados)"></a></p>
+<p>No canto superior direito de <strong>A pagar</strong>:</p>
+<ul>
+<li><strong>⚠ Emails a pedir ação:</strong> quantos emails com o marcador <em>Faturas/Ação necessária</em> ainda estão na caixa de entrada. Quando chega a zero, não há pedidos por tratar.</li>
+<li><strong>Processar agora:</strong> ver abaixo.</li>
+</ul>
+</section>
+<section id="quando-é-que-o-automatismo-corre" class="level2">
+<h2 class="anchored" data-anchor-id="quando-é-que-o-automatismo-corre">Quando é que o automatismo corre</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quando</th>
+<th>O que acontece</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>De 10 em 10 minutos</td>
+<td>Verifica se chegou email novo ou se há ficheiros nas pastas *_Entrada*. Se houver, trata-os</td>
+</tr>
+<tr class="even">
+<td>Às 8h, 13h e 19h</td>
+<td>Volta a ver tudo, mesmo que não haja nada novo (rede de segurança)</td>
+</tr>
+<tr class="odd">
+<td>Caixa <strong>Processar agora</strong> (separador A pagar)</td>
+<td>Trata já. Marcar a caixa e esperar 1 a 3 minutos: a caixa desmarca-se sozinha e aparece “Atualizado às…”</td>
+</tr>
+</tbody>
+</table>
+<p>Uma fatura que chega por email aparece na folha, no máximo, cerca de 10 minutos depois. Para ver logo, usar <strong>Processar agora</strong>.</p>
+</section>
+</section>
 <section id="resumo" class="level1">
-<h1>5. Resumo</h1>
+<h1>6. Resumo</h1>
 <section id="o-que-fazer-em-cada-caso" class="level2">
 <h2 class="anchored" data-anchor-id="o-que-fazer-em-cada-caso">O que fazer em cada caso</h2>
 <table class="caption-top table">
@@ -683,6 +791,38 @@ ul.task-list li input[type="checkbox"] {
 <tr class="even">
 <td>Saber se uma prótese já voltou do laboratório</td>
 <td>Próteses (ou Avisos → Próteses)</td>
+</tr>
+<tr class="odd">
+<td>Fatura de fornecedor em papel</td>
+<td>Digitalizar (uma fatura por ficheiro) → Drive, *Faturas fornecedores → _Entrada → Faturas*</td>
+</tr>
+<tr class="even">
+<td>Email com o marcador Faturas/Ação necessária</td>
+<td>Tratar o pedido (ou passar à gestão) e só depois arquivar</td>
+</tr>
+<tr class="odd">
+<td>Email com o marcador Faturas/Rever</td>
+<td>Se for fatura de fornecedor: marcador Faturas. Se não: tirar o marcador</td>
+</tr>
+<tr class="even">
+<td>Fatura “Por registar” na folha</td>
+<td>Registar no Novigest e mudar o estado para “Registada no Novigest”</td>
+</tr>
+<tr class="odd">
+<td>Ver uma fatura acabada de chegar</td>
+<td>Folha → A pagar → marcar “Processar agora”</td>
+</tr>
+<tr class="even">
+<td>Procurar um email de fatura que saiu da caixa de entrada</td>
+<td>Gmail → marcador Faturas (ou Comprovativos)</td>
+</tr>
+<tr class="odd">
+<td>Dados de uma fatura na folha não batem com o PDF</td>
+<td>Corrigir na folha (fornecedor, número, data ou valor)</td>
+</tr>
+<tr class="even">
+<td>Ficheiro continua na pasta _Entrada ou fatura não aparece na folha</td>
+<td>Processar agora; se não resolver, avisar a gestão</td>
 </tr>
 </tbody>
 </table>
