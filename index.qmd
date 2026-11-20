@@ -442,16 +442,16 @@ Tactis. Esta secção vai ser completada.
 
 # 5. Faturas de fornecedores
 
-As faturas e os comprovativos de pagamento dos fornecedores são organizados por um **automatismo**
-no Google da clínica (conta geral@). Ele lê o email e algumas pastas do Drive, guarda os PDF e
-regista tudo na folha **Faturas fornecedores – registo**. A receção usa a folha para registar as
+As faturas e os comprovativos de pagamento dos fornecedores são maioritariamente organizados por um
+**automatismo** no Google da clínica (conta geral@). Ele lê o email e algumas pastas do Drive, guarda os PDF e
+regista tudo na folha **[Faturas fornecedores – registo](https://docs.google.com/spreadsheets/d/1MsH2aGtVHx9JMY-kvBg2kJUwSecfNRca0Ki7Zz6SqlA/edit)**. A receção usa a folha para registar as
 faturas no Novigest e trata do que o automatismo não consegue decidir sozinho.
 
 ## O que entra sozinho
 
-- **Faturas e comprovativos que chegam por email ao geral@** de fornecedores conhecidos: o PDF é
+- **Faturas e notas de crédito que chegam por email ao geral@** de fornecedores conhecidos: o PDF é
   guardado no Drive e a fatura aparece na folha. O email fica lido, sai da caixa de entrada e recebe o
-  marcador **Faturas** ou **Comprovativos**.
+  marcador **Faturas**.
 - **Débitos diretos** (seguros, telecomunicações, eletricidade, água, renting): contam como pagos
   quando chega a data de vencimento.
 - **Comprovativos de transferência do Santander**: ficam ligados à fatura pelo número escrito no
@@ -460,7 +460,6 @@ faturas no Novigest e trata do que o automatismo não consegue decidir sozinho.
 ::: {.destaque}
 **Não é imediato.** O automatismo corre de 10 em 10 minutos. Uma fatura que acabou de chegar por email
 ou de ser posta na pasta ainda não está na folha nem foi arquivada: aparece até cerca de 10 minutos depois.
-Para não esperar, usar [Processar agora](#quando-é-que-o-automatismo-corre).
 :::
 
 **Onde fica o email depois de tratado.** Quando o automatismo trata um email de fatura ou comprovativo,
@@ -468,25 +467,32 @@ o email **sai da caixa de entrada** (não é apagado). Para o encontrar, abrir o
 **Comprovativos** no Gmail. A exceção são os emails que pedem alguma coisa (ver *Faturas/Ação necessária*
 abaixo), que ficam na caixa de entrada.
 
-Abrir um email antes de o automatismo correr não faz mal: a fatura é registada na mesma. **Não apagar**
-nem mandar para o spam emails de faturas, porque esses deixam de ser lidos.
+⚠ **Atenção:** abrir um email antes de o automatismo correr não faz mal, a fatura é registada na mesma.
+Mas **não apagar** nem mandar para o spam emails de faturas, porque esses deixam de ser lidos.
 
 ## O que a receção faz
 
-**Fatura em papel:** digitalizar (ou fotografar) e pôr o ficheiro no Drive, em
-*Faturas fornecedores → _Entrada → Faturas*. Um comprovativo em papel vai para *_Entrada → Comprovativos*.
-
 ::: {.destaque}
-**Uma fatura = um ficheiro.** Nunca digitalizar várias faturas para o mesmo PDF: o automatismo só
-regista uma e as outras perdem-se. Se o scanner juntar tudo, separar antes de pôr na pasta. Uma fatura com
-várias páginas é um só ficheiro, com todas as páginas.
+⚠ **Registar no Novigest — o mais importante.** Na folha
+[Faturas fornecedores – registo](https://docs.google.com/spreadsheets/d/1MsH2aGtVHx9JMY-kvBg2kJUwSecfNRca0Ki7Zz6SqlA/edit), separador **Registo**, as faturas com estado **Por registar** são as
+que **faltam no Novigest**. Registar cada uma no Novigest e, logo a seguir, **mudar o estado para
+Registada no Novigest**. Uma fatura que fica em "Por registar" não está na contabilidade da clínica.
 :::
 
-- **Não é preciso dar nome ao ficheiro.** O automatismo lê a fatura e muda-lhe o nome sozinho
+**Fatura em papel:** digitalizar e pôr o PDF no Drive, em *Faturas fornecedores → _Entrada → Faturas*.
+
+<small>Um comprovativo em papel (caso raro) vai para *_Entrada → Comprovativos*.</small>
+
+::: {.destaque}
+⚠ **Uma fatura = um ficheiro.** Nunca digitalizar diferentes faturas e juntá-las no mesmo PDF: o
+automatismo só regista uma e as outras perdem-se. Se o scanner juntar tudo, separar antes de pôr na pasta.
+:::
+
+- **Não é preciso dar nome ao ficheiro PDF.** O automatismo lê a fatura e muda-lhe o nome sozinho
   (data, fornecedor e número), e tira-a da pasta *_Entrada* depois de a tratar.
 - **Digitalizar bem:** o automatismo lê o texto do PDF, por isso uma digitalização má dá erros de leitura
-  (número, data ou valor errados). Folha direita, inteira e sem sombras; texto
-  nítido; todas as páginas. Sempre que possível, preferir o PDF original enviado pelo fornecedor.
+  (número, data ou valor errados). Folha direita, inteira e sem sombras; texto nítido; todas as páginas.
+  Sempre que possível, preferir o PDF original enviado pelo fornecedor.
 
 ![](imagens/34_faturas_entrada.png){fig-alt="Pasta _Entrada no Drive, com as subpastas Comprovativos e Faturas"}
 
@@ -503,17 +509,9 @@ várias páginas é um só ficheiro, com todas as páginas.
 
 ![](imagens/31_faturas_email_acao.png){fig-alt="Email na caixa de entrada com estrela e os marcadores Faturas e Faturas/Ação necessária"}
 
-::: {.destaque}
-Nunca arquivar um email com o marcador **Faturas/Ação necessária** sem tratar o pedido. Na dúvida,
-reencaminhar à gestão.
-:::
-
-**Registar no Novigest:** na folha, separador **Registo**, as faturas com estado **Por registar** são as
-que faltam no Novigest. Depois de registar, mudar o estado para **Registada no Novigest**.
-
 ## Verificar se está a correr bem
 
-O automatismo poupa trabalho, mas **não substitui a verificação da receção**. Ao registar cada fatura no
+O automatismo poupa trabalho, mas **não substitui a verificação humana**. Ao registar cada fatura no
 Novigest, e sempre que se puser um ficheiro na pasta *_Entrada*:
 
 1. **A fatura apareceu na folha?** Se, 10 a 15 minutos depois, não estiver no Registo, usar
@@ -521,10 +519,15 @@ Novigest, e sempre que se puser um ficheiro na pasta *_Entrada*:
 2. **Os dados batem com o PDF?** Abrir o PDF (coluna *PDF*) e comparar **fornecedor, número, data e
    valor**. Se algum estiver errado, **corrigir na folha**: na execução seguinte o ficheiro é renomeado
    com os dados certos.
-3. **A pasta *_Entrada* esvaziou?** Um ficheiro que fica lá mais de 10 a 15 minutos não foi lido (por
-   exemplo, porque não é PDF ou fotografia). Avisar a gestão.
-4. **Ainda há emails a pedir ação?** Ver o aviso no separador *A pagar* e o marcador
-   *Faturas/Ação necessária*.
+3. **O fornecedor está identificado?** Se a coluna do fornecedor estiver vazia ou disser "criar no
+   Novigest", avisar a gestão antes de registar.
+4. **Há linhas em "Rever" ou "Duplicada"?** Abrir o PDF e confirmar. Uma fatura nunca se regista duas vezes
+   no Novigest: na dúvida, perguntar à gestão.
+5. **A pasta *_Entrada* esvaziou?** Um ficheiro que fica lá mais de 10 a 15 minutos não foi lido (por
+   exemplo, porque não é PDF). Avisar a gestão.
+6. **Chegou uma fatura em papel que não aparece na folha?** Confirmar que foi digitalizada e posta na pasta.
+7. **Ainda há emails a pedir ação ou a rever?** Ver o aviso no separador *A pagar* e os marcadores
+   *Faturas/Ação necessária* e *Faturas/Rever*.
 
 ::: {.destaque}
 Na dúvida, não apagar nada: avisar a gestão.
@@ -534,7 +537,8 @@ Na dúvida, não apagar nada: avisar a gestão.
 
 ![](imagens/33_faturas_separadores.png){fig-alt="Separadores da folha: Registo, A pagar, Recentes, Pagamentos, Outros documentos, Fornecedores, Cruzamento Novigest, Erros"}
 
-- **Registo:** todas as faturas desde setembro de 2026, com a data de vencimento e o que está pago.
+- **Registo:** todas as faturas desde setembro de 2026, com a data de vencimento, o que está pago e o
+  comprovativo do pagamento.
 - **A pagar:** só o que está em dívida, ordenado pela data de vencimento. As vencidas aparecem a vermelho,
   com os dias em atraso.
 - **Recentes:** tudo, do mais recente para o mais antigo.
@@ -546,7 +550,7 @@ No canto superior direito de **A pagar**:
 
 - **⚠ Emails a pedir ação:** quantos emails com o marcador *Faturas/Ação necessária* ainda estão na caixa
   de entrada. Quando chega a zero, não há pedidos por tratar.
-- **Processar agora:** ver abaixo.
+- **Processar agora:** só é preciso quando uma fatura não aparece na folha (ver acima).
 
 ## Quando é que o automatismo corre
 
@@ -555,9 +559,6 @@ No canto superior direito de **A pagar**:
 | De 10 em 10 minutos | Verifica se chegou email novo ou se há ficheiros nas pastas *_Entrada*. Se houver, trata-os |
 | Às 8h, 13h e 19h | Volta a ver tudo, mesmo que não haja nada novo (rede de segurança) |
 | Caixa **Processar agora** (separador A pagar) | Trata já. Marcar a caixa e esperar 1 a 3 minutos: a caixa desmarca-se sozinha e aparece "Atualizado às…" |
-
-Uma fatura que chega por email aparece na folha, no máximo, cerca de 10 minutos depois. Para ver logo,
-usar **Processar agora**.
 
 # 6. Resumo
 
@@ -581,11 +582,10 @@ usar **Processar agora**.
 | Abriu-se uma embalagem nova, ou produto estragado ou fora de validade | Stocks → Saída |
 | Material a acabar | Stocks → Pedidos → Requerer |
 | Saber se uma prótese já voltou do laboratório | Próteses (ou Avisos → Próteses) |
-| Fatura de fornecedor em papel | Digitalizar (uma fatura por ficheiro) → Drive, *Faturas fornecedores → _Entrada → Faturas* |
+| Fatura de fornecedor em papel | Digitalizar (uma fatura = um ficheiro) → Drive, *Faturas fornecedores → _Entrada → Faturas* |
 | Email com o marcador Faturas/Ação necessária | Tratar o pedido (ou passar à gestão) e só depois arquivar |
 | Email com o marcador Faturas/Rever | Se for fatura de fornecedor: marcador Faturas. Se não: tirar o marcador |
-| Fatura "Por registar" na folha | Registar no Novigest e mudar o estado para "Registada no Novigest" |
-| Ver uma fatura acabada de chegar | Folha → A pagar → marcar "Processar agora" |
+| **Fatura "Por registar" na folha** | **Registar no Novigest e mudar o estado para "Registada no Novigest"** |
 | Procurar um email de fatura que saiu da caixa de entrada | Gmail → marcador Faturas (ou Comprovativos) |
 | Dados de uma fatura na folha não batem com o PDF | Corrigir na folha (fornecedor, número, data ou valor) |
 | Ficheiro continua na pasta _Entrada ou fatura não aparece na folha | Processar agora; se não resolver, avisar a gestão |
