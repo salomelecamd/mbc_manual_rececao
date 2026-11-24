@@ -44,6 +44,7 @@ A equipa pede por escrito e depois vê o resultado na agenda.
   <div class="tarefa t-enviar"><small>3</small>Confirmar as consultas, segundo o <a href="#confirmação-de-consultas">procedimento de confirmação</a>.</div>
   <div class="tarefa t-ler"><small>4</small>Ver os <a href="#avisos-do-novigest">Avisos do Novigest</a> (Próteses e Stocks) e o calendário <a href="#avisos-internos-calendário-avisos-mbc">Avisos MBC</a>.</div>
   <div class="tarefa t-ler"><small>5</small>Ver os emails com o marcador <a href="#o-que-a-receção-faz">Faturas/Ação necessária</a> e registar no Novigest as faturas <b>Por registar</b>.</div>
+  <div class="tarefa t-enviar"><small>6</small>Ao fim do dia, pedir <a href="#avaliações-no-google">avaliação no Google</a> aos doentes novos e a quem terminou um tratamento.</div>
 </div>
 ```
 
@@ -285,6 +286,43 @@ consultas, o doente vai para as **Remarcações**.
 ![](imagens/07_remarcacoes.png){fig-alt="Separador Remarcações com o botão inserir e o total pendente"}
 
 O número por tratar aparece à esquerda, em "Total de remarcações pendentes".
+
+## Avaliações no Google
+
+As avaliações ajudam outras pessoas a encontrar a clínica no Google. A receção pede-as por SMS, ao fim
+do dia.
+
+```{=html}
+<ol class="regras">
+  <li><span class="num">1</span><div><b>Pede-se a todos, sem escolher.</b><span>Também a quem pareceu descontente. Pedir só aos satisfeitos é proibido pelo Google e pode levar à suspensão do perfil da clínica.</span></div></li>
+  <li><span class="num">2</span><div><b>Só em dois momentos.</b><span>Depois da primeira consulta de um doente novo, ou quando um tratamento termina (implante, ortodontia, prótese). O médico avisa a receção quando um tratamento termina.</span></div></li>
+  <li><span class="num">3</span><div><b>No máximo uma vez por ano a cada doente.</b><span>Antes de enviar, ver no Novigest se o doente já tem a nota "Avaliação pedida".</span></div></li>
+  <li><span class="num">4</span><div><b>Nunca oferecer nada em troca.</b><span>Nem descontos, nem brindes.</span></div></li>
+</ol>
+
+<h3 class="sub3">Como fazer, ao fim do dia</h3>
+<div class="tarefas">
+  <div class="tarefa t-ler"><small>1</small>Ver na agenda do dia os <b>doentes novos</b> e os doentes que <b>terminaram um tratamento</b>.</div>
+  <div class="tarefa t-ler"><small>2</small>No Novigest, ver se o doente já tem a nota <b>"Avaliação pedida"</b> com menos de um ano. Se tiver, não enviar.</div>
+  <div class="tarefa t-enviar"><small>3</small>Enviar a mensagem pela plataforma de comunicações.</div>
+  <div class="tarefa t-ler"><small>4</small>No Novigest, deixar a nota <b>"Avaliação pedida — [data]"</b> no doente.</div>
+</div>
+
+<h3 class="sub3">A mensagem</h3>
+<div class="msgs">
+  <article class="msg">
+    <header><h4>Pedido de avaliação</h4><span class="quem voce">Envia a receção</span></header>
+    <div class="sms" id="m3">Olá [nome]. Obrigada por ter escolhido a Mariluz Bioclinic. A sua opinião ajuda outras pessoas a encontrar-nos. Por favor, deixe a sua avaliação no Google aqui: https://g.page/r/CTza7TufpYbtEBE/review</div>
+    <button type="button" class="copiar" data-alvo="m3">Copiar mensagem</button>
+    <p>Trocar [nome] pelo nome do doente antes de enviar.</p>
+  </article>
+</div>
+```
+
+::: {.nota}
+**Apareceu uma avaliação negativa?** Não responder. Avisar a gestão (Salomé), que responde em nome da
+clínica.
+:::
 
 # 4. Avisos, material e próteses
 
@@ -577,6 +615,8 @@ No canto superior direito de **A pagar**:
 | Clínica fecha ou abre fora do habitual | Pedir à gestão por escrito |
 | Ligar a um doente para marcar | listas → Lista de Espera |
 | Doente desmarcou ou é preciso remarcar | listas → Remarcações |
+| Doente novo ou que terminou um tratamento | Ao fim do dia: SMS a pedir avaliação no Google (se não tiver a nota "Avaliação pedida" com menos de um ano) |
+| Avaliação negativa no Google | Não responder: avisar a gestão |
 | Aviso interno com data | Calendário Google Avisos MBC |
 | Chegou material | Stocks → Entrada |
 | Abriu-se uma embalagem nova, ou produto estragado ou fora de validade | Stocks → Saída |
