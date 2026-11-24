@@ -294,11 +294,16 @@ do dia.
 
 ```{=html}
 <ol class="regras">
-  <li><span class="num">1</span><div><b>Pede-se a todos, sem escolher.</b><span>Também a quem pareceu descontente. Pedir só aos satisfeitos é proibido pelo Google e pode levar à suspensão do perfil da clínica.</span></div></li>
-  <li><span class="num">2</span><div><b>A todos os doentes atendidos no dia.</b><span>Novos ou antigos, seja qual for a consulta. O que trava os pedidos repetidos é a regra seguinte.</span></div></li>
-  <li><span class="num">3</span><div><b>No máximo uma vez por ano a cada doente.</b><span>Antes de enviar, ver as notas do doente no Novigest. Com "Avaliação pedida" há menos de um ano, não se envia. Com "Avaliação feita", não se volta a enviar.</span></div></li>
-  <li><span class="num">4</span><div><b>Nunca oferecer nada em troca.</b><span>Nem descontos, nem brindes.</span></div></li>
+  <li><span class="num">1</span><div><b>A todos os doentes atendidos no dia.</b><span>Novos ou antigos, seja qual for a consulta. O que trava os pedidos repetidos é a regra 2.</span></div></li>
+  <li><span class="num">2</span><div><b>No máximo uma vez por ano a cada doente.</b><span>Antes de enviar, ver as notas do doente no Novigest. Com "Avaliação pedida" há menos de um ano, não se envia. Com "Avaliação feita", não se volta a enviar.</span></div></li>
+  <li><span class="num">3</span><div><b>Nunca oferecer nada em troca.</b><span>Nem descontos, nem brindes.</span></div></li>
 </ol>
+
+<h3 class="sub3">Na receção, quando o doente sai</h3>
+<div class="tarefas">
+  <div class="tarefa t-ligar"><small>Dizer ao doente</small>"Hoje vai receber uma SMS nossa com um link para deixar a sua avaliação no Google. A sua opinião é muito importante para nós e ajuda outras pessoas a encontrarem-nos."</div>
+</div>
+<p class="suave">Dizer só aos doentes a quem se vai enviar a SMS: ver a nota no Novigest quando o doente está ao balcão.</p>
 
 <h3 class="sub3">Como fazer, ao fim do dia</h3>
 <div class="tarefas">
