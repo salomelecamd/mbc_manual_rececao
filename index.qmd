@@ -500,6 +500,24 @@ As faturas e os comprovativos de pagamento dos fornecedores são maioritariament
 regista tudo na folha **[Faturas fornecedores – registo](https://docs.google.com/spreadsheets/d/1MsH2aGtVHx9JMY-kvBg2kJUwSecfNRca0Ki7Zz6SqlA/edit)**. A receção usa a folha para registar as
 faturas no Novigest e trata do que o automatismo não consegue decidir sozinho.
 
+## Onde estão as pastas
+
+Tudo está no Google Drive da clínica, no disco partilhado **mariluz_bioclinic** (no Drive: *Discos
+partilhados → mariluz_bioclinic*). As contas da clínica já têm acesso; não é preciso pedir.
+
+| Pasta ou ficheiro | Para que serve |
+|---|---|
+| [Faturas fornecedores](https://drive.google.com/drive/folders/1Hg5drof9oeOL8WVFjMRlE6Ab8N22Qy8I) | Pasta principal. O automatismo arquiva aqui as faturas, por ano e mês (*2026 → 11*) |
+| [_Entrada](https://drive.google.com/drive/folders/1klbcrJrheZgumjbXYDsG9YRn1fSB6YbS) | **A única pasta onde a receção põe ficheiros**: *Faturas* (faturas em papel digitalizadas) e *Comprovativos* |
+| [Faturas de 2026](https://drive.google.com/drive/folders/1j0MtbqWTcyLd0lB6zCY7skUoH9v89p6n) | Faturas já arquivadas, uma subpasta por mês. Só para consultar |
+| [Pagamentos](https://drive.google.com/drive/folders/1x-0YpljH-mO_z2gbWtIGBoZtE9gaJ3Q1) | Comprovativos de pagamento já arquivados. Só para consultar |
+| [Folha de registo](https://docs.google.com/spreadsheets/d/1MsH2aGtVHx9JMY-kvBg2kJUwSecfNRca0Ki7Zz6SqlA/edit) | Lista de todas as faturas, com o estado no Novigest e o pagamento |
+
+::: {.destaque}
+⚠ **Fora da pasta _Entrada, não se cria, move, muda o nome nem apaga nada.** As pastas de cada ano e mês
+são organizadas pelo automatismo: um ficheiro mudado à mão deixa de bater com a folha.
+:::
+
 ## O que entra sozinho
 
 - **Faturas e notas de crédito que chegam por email ao geral@** de fornecedores conhecidos: o PDF é
@@ -613,7 +631,67 @@ No canto superior direito de **A pagar**:
 | Às 8h, 13h e 19h | Volta a ver tudo, mesmo que não haja nada novo (rede de segurança) |
 | Caixa **Processar agora** (separador A pagar) | Trata já. Marcar a caixa e esperar 1 a 3 minutos: a caixa desmarca-se sozinha e aparece "Atualizado às…" |
 
-# 6. Resumo
+## Documentação em falta (pedidos do contabilista)
+
+Todos os meses o contabilista envia à gestão a lista de documentos que lhe faltam (sobretudo faturas que
+aparecem no e-Fatura e que ele não recebeu). A gestão passa essa lista para a folha
+**[Documentação em falta](https://docs.google.com/spreadsheets/d/1GP9KVr2OsvWT0b8XJk3WOlGlnGG8S-4I012iGshIP4E/edit)**.
+A receção ajuda a encontrar os documentos.
+
+**Como tratar uma linha "Em falta":**
+
+1. Procurar a fatura: no Gmail do geral@ (pesquisar pelo fornecedor ou pelo número), no papel da receção ou
+   pedindo-a ao fornecedor.
+2. Se foi pedida ao fornecedor e ainda não chegou: mudar o estado para **Pedido à entidade** e escrever
+   em *Observações* a quem e quando se pediu.
+3. Quando houver PDF: pô-lo em *Faturas fornecedores → _Entrada → Faturas* (ou reencaminhar o email para
+   o geral@). O automatismo arquiva-o.
+4. Depois de arquivado, abrir o PDF na pasta do mês, copiar o link (*Partilhar → Copiar link*), colar na
+   coluna **Link do documento** e mudar o estado para **Disponível na Drive**.
+
+| Estado | Quer dizer |
+|---|---|
+| Em falta | Ninguém tem o documento |
+| Pedido à entidade | Já se pediu ao fornecedor ou ao banco; à espera |
+| Disponível na Drive | O documento está no Drive e o link está na linha |
+
+::: {.destaque}
+⚠ Na folha só se mexe em **Estado**, **Link do documento** e **Observações**. As outras colunas vêm da
+lista do contabilista e não se alteram. Não apagar linhas.
+:::
+
+# 6. Caixa e fecho do mês
+
+## Folha de caixa
+
+O registo da caixa (numerário) faz-se **sempre online**, no ficheiro
+**[SAIDAS-CAIXA_2026](https://docs.google.com/spreadsheets/d/1osl67rDfC0CG-gA0E0nw33LN3yQMSXMeVBiXmtsCiAw/edit)**,
+com um separador por mês.
+
+- **Escrever diretamente nesse ficheiro.** Não descarregar, não fazer cópias em Excel e não enviar por
+  email: o contabilista e a gestão veem sempre a versão atual.
+- **Uma linha por movimento:** recibos pagos em dinheiro (entrada), depósitos no banco e despesas pagas
+  com dinheiro da caixa (saída).
+- **Despesa paga em dinheiro = fatura com o NIF da clínica (503 741 086).** Pedir sempre fatura com NIF
+  (supermercado, CTT, etc.) e pôr o papel digitalizado em *Faturas fornecedores → _Entrada → Faturas*.
+  Uma despesa sem fatura aparece depois na lista de documentação em falta do contabilista.
+- No fim do ano a gestão cria o ficheiro do ano seguinte.
+
+## Fecho do mês
+
+No início de cada mês, para o mês anterior:
+
+1. Tirar do Novigest, como até agora, o **SAF-T de faturação** e o **resumo de caixa** do mês.
+2. Guardar os dois na pasta
+   **[04 Faturação e caixa → 2026](https://drive.google.com/drive/folders/1NXJfJsR7KT3_gor1_Oky1b3DJyt226ZA)**,
+   com estes nomes (ano e mês do período):
+   - `SAFT_2026-11.xml`
+   - `CAIXA_2026-11.xlsx`
+3. Confirmar que o separador do mês na folha de caixa está completo.
+
+Já não é preciso enviar estes ficheiros por email ao contabilista: ele tem acesso à pasta.
+
+# 7. Resumo
 
 ## O que fazer em cada caso
 
@@ -646,6 +724,10 @@ No canto superior direito de **A pagar**:
 | Procurar um email de fatura que saiu da caixa de entrada | Gmail → marcador Faturas (ou Comprovativos) |
 | Dados de uma fatura na folha não batem com o PDF | Corrigir na folha (fornecedor, número, data ou valor) |
 | Ficheiro continua na pasta _Entrada ou fatura não aparece na folha | Processar agora; se não resolver, avisar a gestão |
+| Linha "Em falta" na folha Documentação em falta | Encontrar o documento → _Entrada → colar o link → "Disponível na Drive" |
+| Movimento de caixa (recibo em dinheiro, depósito, despesa) | Registar logo na folha de caixa online (SAIDAS-CAIXA do ano) |
+| Despesa paga com dinheiro da caixa | Pedir fatura com NIF 503 741 086 → digitalizar → _Entrada → Faturas |
+| Início do mês | SAF-T e resumo de caixa do mês anterior → pasta 04 Faturação e caixa, com os nomes SAFT_AAAA-MM e CAIXA_AAAA-MM |
 
 ```{=html}
 <script>
