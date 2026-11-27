@@ -699,7 +699,7 @@ mês, por esta ordem:
 4. **Entrega à Dra. Mariluz.** Uma linha com o tipo **Entrega à Dra. Mariluz** e o valor entregue em
    *Saída*. O que fica na gaveta é o *Saldo* dessa linha.
 
-Em *Quem*, escrever o nome de quem fez cada linha. A coluna *Saldo* é automática e não se escreve nela.
+Em *Quem*, escolher na lista quem fez cada linha (Sílvia ou Mónica). A coluna *Saldo* é automática e não se escreve nela.
 
 O separador **Depósitos** é preenchido pela gestão: cada depósito no banco, confirmado no extrato mensal.
 Compara, mês a mês, o que a receção entregou à direção com o que foi depositado, e mostra quanto ainda
