@@ -45,6 +45,7 @@ A equipa pede por escrito e depois vê o resultado na agenda.
   <div class="tarefa t-ler"><small>4</small>Ver os <a href="#avisos-do-novigest">Avisos do Novigest</a> (Próteses e Stocks) e o calendário <a href="#avisos-internos-calendário-avisos-mbc">Avisos MBC</a>.</div>
   <div class="tarefa t-ler"><small>5</small>Ver os emails com o marcador <a href="#o-que-a-receção-faz">Faturas/Ação necessária</a> e registar no Novigest as faturas <b>Por registar</b>.</div>
   <div class="tarefa t-enviar"><small>6</small>Ao fim do dia, pedir <a href="#avaliações-no-google">avaliação no Google</a> aos doentes atendidos.</div>
+  <div class="tarefa t-ler"><small>7</small>Ao fim do dia, fazer o <a href="#fecho-da-caixa-ao-fim-do-dia-a-partir-de-dezembro-de-2026">fecho da caixa</a> na folha online.</div>
 </div>
 ```
 
@@ -670,12 +671,33 @@ com um separador por mês.
 
 - **Escrever diretamente nesse ficheiro.** Não descarregar, não fazer cópias em Excel e não enviar por
   email: o contabilista e a gestão veem sempre a versão atual.
-- **Uma linha por movimento:** recibos pagos em dinheiro (entrada), depósitos no banco e despesas pagas
-  com dinheiro da caixa (saída).
 - **Despesa paga em dinheiro = fatura com o NIF da clínica (503 741 086).** Pedir sempre fatura com NIF
   (supermercado, CTT, etc.) e pôr o papel digitalizado em *Faturas fornecedores → _Entrada → Faturas*.
   Uma despesa sem fatura aparece depois na lista de documentação em falta do contabilista.
 - No fim do ano a gestão cria o ficheiro do ano seguinte.
+
+### Fecho da caixa ao fim do dia (a partir de dezembro de 2026)
+
+Já **não se copia cada recibo** para a folha: o Novigest tem essa lista. Ao fim do dia, no separador do
+mês, por esta ordem:
+
+1. **Recebido no dia.** No Novigest: **List. → Caixa**, *Desde* e *até* = hoje, *Outros* em branco →
+   **gerar listagem**. No Excel que abre, ler o valor de **Numerário** em *Recebido no período*. Na folha:
+   uma linha com a data, tipo **Recebido (Novigest)** e esse valor em *Entrada*. Fechar o Excel (se ficar
+   aberto, o Novigest dá erro na listagem seguinte).
+2. **Despesas pagas em dinheiro nesse dia.** Uma linha por despesa: tipo **Despesa**, descrição
+   (fornecedor e nº da fatura), valor em *Saída* e, em *Fatura (link)*, o link do PDF depois de arquivado.
+   A célula do link fica amarela enquanto estiver vazia.
+3. **Contar o dinheiro da gaveta** e escrever o valor em **Contado**, na última linha do dia. A coluna
+   *Diferença* calcula-se sozinha: **verde** = bate certo; **vermelho** = há diferença. Uma diferença nunca
+   se corrige à mão: avisar a gestão no próprio dia.
+4. **Entrega à Dra. Mariluz.** Uma linha com o tipo **Entrega à Dra. Mariluz** e o valor entregue em
+   *Saída*. O que fica na gaveta é o *Saldo* dessa linha.
+
+Em *Quem*, escrever o nome de quem fez cada linha. A coluna *Saldo* é automática e não se escreve nela.
+
+O separador **Depósitos** é preenchido pela gestão: cada depósito no banco do dinheiro entregue, com o
+comprovativo. Mostra sempre quanto foi entregue à direção e ainda não foi depositado.
 
 ## Fecho do mês
 
@@ -725,7 +747,8 @@ Já não é preciso enviar estes ficheiros por email ao contabilista: ele tem ac
 | Dados de uma fatura na folha não batem com o PDF | Corrigir na folha (fornecedor, número, data ou valor) |
 | Ficheiro continua na pasta _Entrada ou fatura não aparece na folha | Processar agora; se não resolver, avisar a gestão |
 | Linha "Em falta" na folha Documentação em falta | Encontrar o documento → _Entrada → colar o link → "Disponível na Drive" |
-| Movimento de caixa (recibo em dinheiro, depósito, despesa) | Registar logo na folha de caixa online (SAIDAS-CAIXA do ano) |
+| Fim do dia | Fecho da caixa: Recebido (Novigest) → despesas → contar (Contado) → Entrega à Dra. Mariluz |
+| Diferença a vermelho na folha de caixa | Não corrigir: avisar a gestão no próprio dia |
 | Despesa paga com dinheiro da caixa | Pedir fatura com NIF 503 741 086 → digitalizar → _Entrada → Faturas |
 | Início do mês | SAF-T e resumo de caixa do mês anterior → pasta 04 Faturação e caixa, com os nomes SAFT_AAAA-MM e CAIXA_AAAA-MM |
 

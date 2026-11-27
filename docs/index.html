@@ -205,6 +205,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="tarefa t-ler"><small>4</small>Ver os <a href="#avisos-do-novigest">Avisos do Novigest</a> (Próteses e Stocks) e o calendário <a href="#avisos-internos-calendário-avisos-mbc">Avisos MBC</a>.</div>
   <div class="tarefa t-ler"><small>5</small>Ver os emails com o marcador <a href="#o-que-a-receção-faz">Faturas/Ação necessária</a> e registar no Novigest as faturas <b>Por registar</b>.</div>
   <div class="tarefa t-enviar"><small>6</small>Ao fim do dia, pedir <a href="#avaliações-no-google">avaliação no Google</a> aos doentes atendidos.</div>
+  <div class="tarefa t-ler"><small>7</small>Ao fim do dia, fazer o <a href="#fecho-da-caixa-ao-fim-do-dia-a-partir-de-dezembro-de-2026">fecho da caixa</a> na folha online.</div>
 </div>
 </section>
 </section>
@@ -853,10 +854,21 @@ ul.task-list li input[type="checkbox"] {
 <p>O registo da caixa (numerário) faz-se <strong>sempre online</strong>, no ficheiro <strong><a href="https://docs.google.com/spreadsheets/d/1osl67rDfC0CG-gA0E0nw33LN3yQMSXMeVBiXmtsCiAw/edit">SAIDAS-CAIXA_2026</a></strong>, com um separador por mês.</p>
 <ul>
 <li><strong>Escrever diretamente nesse ficheiro.</strong> Não descarregar, não fazer cópias em Excel e não enviar por email: o contabilista e a gestão veem sempre a versão atual.</li>
-<li><strong>Uma linha por movimento:</strong> recibos pagos em dinheiro (entrada), depósitos no banco e despesas pagas com dinheiro da caixa (saída).</li>
 <li><strong>Despesa paga em dinheiro = fatura com o NIF da clínica (503 741 086).</strong> Pedir sempre fatura com NIF (supermercado, CTT, etc.) e pôr o papel digitalizado em *Faturas fornecedores → _Entrada → Faturas*. Uma despesa sem fatura aparece depois na lista de documentação em falta do contabilista.</li>
 <li>No fim do ano a gestão cria o ficheiro do ano seguinte.</li>
 </ul>
+<section id="fecho-da-caixa-ao-fim-do-dia-a-partir-de-dezembro-de-2026" class="level3">
+<h3 class="anchored" data-anchor-id="fecho-da-caixa-ao-fim-do-dia-a-partir-de-dezembro-de-2026">Fecho da caixa ao fim do dia (a partir de dezembro de 2026)</h3>
+<p>Já <strong>não se copia cada recibo</strong> para a folha: o Novigest tem essa lista. Ao fim do dia, no separador do mês, por esta ordem:</p>
+<ol type="1">
+<li><strong>Recebido no dia.</strong> No Novigest: <strong>List. → Caixa</strong>, <em>Desde</em> e <em>até</em> = hoje, <em>Outros</em> em branco → <strong>gerar listagem</strong>. No Excel que abre, ler o valor de <strong>Numerário</strong> em <em>Recebido no período</em>. Na folha: uma linha com a data, tipo <strong>Recebido (Novigest)</strong> e esse valor em <em>Entrada</em>. Fechar o Excel (se ficar aberto, o Novigest dá erro na listagem seguinte).</li>
+<li><strong>Despesas pagas em dinheiro nesse dia.</strong> Uma linha por despesa: tipo <strong>Despesa</strong>, descrição (fornecedor e nº da fatura), valor em <em>Saída</em> e, em <em>Fatura (link)</em>, o link do PDF depois de arquivado. A célula do link fica amarela enquanto estiver vazia.</li>
+<li><strong>Contar o dinheiro da gaveta</strong> e escrever o valor em <strong>Contado</strong>, na última linha do dia. A coluna <em>Diferença</em> calcula-se sozinha: <strong>verde</strong> = bate certo; <strong>vermelho</strong> = há diferença. Uma diferença nunca se corrige à mão: avisar a gestão no próprio dia.</li>
+<li><strong>Entrega à Dra. Mariluz.</strong> Uma linha com o tipo <strong>Entrega à Dra. Mariluz</strong> e o valor entregue em <em>Saída</em>. O que fica na gaveta é o <em>Saldo</em> dessa linha.</li>
+</ol>
+<p>Em <em>Quem</em>, escrever o nome de quem fez cada linha. A coluna <em>Saldo</em> é automática e não se escreve nela.</p>
+<p>O separador <strong>Depósitos</strong> é preenchido pela gestão: cada depósito no banco do dinheiro entregue, com o comprovativo. Mostra sempre quanto foi entregue à direção e ainda não foi depositado.</p>
+</section>
 </section>
 <section id="fecho-do-mês" class="level2">
 <h2 class="anchored" data-anchor-id="fecho-do-mês">Fecho do mês</h2>
@@ -1002,14 +1014,18 @@ ul.task-list li input[type="checkbox"] {
 <td>Encontrar o documento → _Entrada → colar o link → “Disponível na Drive”</td>
 </tr>
 <tr class="odd">
-<td>Movimento de caixa (recibo em dinheiro, depósito, despesa)</td>
-<td>Registar logo na folha de caixa online (SAIDAS-CAIXA do ano)</td>
+<td>Fim do dia</td>
+<td>Fecho da caixa: Recebido (Novigest) → despesas → contar (Contado) → Entrega à Dra. Mariluz</td>
 </tr>
 <tr class="even">
+<td>Diferença a vermelho na folha de caixa</td>
+<td>Não corrigir: avisar a gestão no próprio dia</td>
+</tr>
+<tr class="odd">
 <td>Despesa paga com dinheiro da caixa</td>
 <td>Pedir fatura com NIF 503 741 086 → digitalizar → _Entrada → Faturas</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>Início do mês</td>
 <td>SAF-T e resumo de caixa do mês anterior → pasta 04 Faturação e caixa, com os nomes SAFT_AAAA-MM e CAIXA_AAAA-MM</td>
 </tr>
