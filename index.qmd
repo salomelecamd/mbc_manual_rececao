@@ -701,8 +701,9 @@ mês, por esta ordem:
 
 Em *Quem*, escrever o nome de quem fez cada linha. A coluna *Saldo* é automática e não se escreve nela.
 
-O separador **Depósitos** é preenchido pela gestão: cada depósito no banco do dinheiro entregue, com o
-comprovativo. Mostra sempre quanto foi entregue à direção e ainda não foi depositado.
+O separador **Depósitos** é preenchido pela gestão: cada depósito no banco, confirmado no extrato mensal.
+Compara, mês a mês, o que a receção entregou à direção com o que foi depositado, e mostra quanto ainda
+está por depositar. É por isso que o valor de cada entrega tem de ser registado com rigor.
 
 ## Fecho do mês
 
